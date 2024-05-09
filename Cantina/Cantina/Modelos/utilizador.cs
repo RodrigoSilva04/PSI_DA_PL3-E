@@ -3,22 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data.Entity;
 
 namespace Cantina
 {
-    class utilizador
+    //Criar a classe utilizador
+    public class utilizador
     {
-        //Criar as 3 variaveis 
-        internal string Id;
-        internal string Nome;
-        internal string Nif;
+        //Criar as 3 variaveis
+        public int id { get; set; }
+        public string nome { get; set; }
+        public string nif { get; set; }
+        
 
-        public utilizador(string id,string nome,string nif)
-        {
-            //Atribuir os valores as variaveis
-            Nome = nome;
-            Id = id;
-            Nif = nif;
-        }
+        
     }
 }
