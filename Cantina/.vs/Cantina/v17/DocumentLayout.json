@@ -1,0 +1,191 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ronca\\OneDrive - IPLeiria\\Desktop\\IPL\\2semestre\\DA\\Projeto\\Cantina\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{86C0E5B7-2300-4509-92B2-F9689A797247}|Cantina\\Cantina.csproj|c:\\users\\ronca\\onedrive - ipleiria\\desktop\\ipl\\2semestre\\da\\projeto\\cantina\\cantina\\modelos\\utilizador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86C0E5B7-2300-4509-92B2-F9689A797247}|Cantina\\Cantina.csproj|solutionrelative:cantina\\modelos\\utilizador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86C0E5B7-2300-4509-92B2-F9689A797247}|Cantina\\Cantina.csproj|c:\\users\\ronca\\onedrive - ipleiria\\desktop\\ipl\\2semestre\\da\\projeto\\cantina\\cantina\\principal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{86C0E5B7-2300-4509-92B2-F9689A797247}|Cantina\\Cantina.csproj|solutionrelative:cantina\\principal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86C0E5B7-2300-4509-92B2-F9689A797247}|Cantina\\Cantina.csproj|C:\\Users\\ronca\\OneDrive - IPLeiria\\Desktop\\IPL\\2semestre\\DA\\Projeto\\Cantina\\cantina\\principal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86C0E5B7-2300-4509-92B2-F9689A797247}|Cantina\\Cantina.csproj|solutionrelative:cantina\\principal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86C0E5B7-2300-4509-92B2-F9689A797247}|Cantina\\Cantina.csproj|C:\\Users\\ronca\\OneDrive - IPLeiria\\Desktop\\IPL\\2semestre\\DA\\Projeto\\Cantina\\cantina\\funcionario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{86C0E5B7-2300-4509-92B2-F9689A797247}|Cantina\\Cantina.csproj|solutionrelative:cantina\\funcionario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86C0E5B7-2300-4509-92B2-F9689A797247}|Cantina\\Cantina.csproj|C:\\Users\\ronca\\OneDrive - IPLeiria\\Desktop\\IPL\\2semestre\\DA\\Projeto\\Cantina\\cantina\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{86C0E5B7-2300-4509-92B2-F9689A797247}|Cantina\\Cantina.csproj|solutionrelative:cantina\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86C0E5B7-2300-4509-92B2-F9689A797247}|Cantina\\Cantina.csproj|C:\\Users\\ronca\\OneDrive - IPLeiria\\Desktop\\IPL\\2semestre\\DA\\Projeto\\Cantina\\cantina\\clientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{86C0E5B7-2300-4509-92B2-F9689A797247}|Cantina\\Cantina.csproj|solutionrelative:cantina\\clientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86C0E5B7-2300-4509-92B2-F9689A797247}|Cantina\\Cantina.csproj|C:\\Users\\ronca\\OneDrive - IPLeiria\\Desktop\\IPL\\2semestre\\DA\\Projeto\\Cantina\\cantina\\multas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{86C0E5B7-2300-4509-92B2-F9689A797247}|Cantina\\Cantina.csproj|solutionrelative:cantina\\multas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86C0E5B7-2300-4509-92B2-F9689A797247}|Cantina\\Cantina.csproj|C:\\Users\\ronca\\OneDrive - IPLeiria\\Desktop\\IPL\\2semestre\\DA\\Projeto\\Cantina\\cantina\\reservas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{86C0E5B7-2300-4509-92B2-F9689A797247}|Cantina\\Cantina.csproj|solutionrelative:cantina\\reservas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86C0E5B7-2300-4509-92B2-F9689A797247}|Cantina\\Cantina.csproj|C:\\Users\\ronca\\OneDrive - IPLeiria\\Desktop\\IPL\\2semestre\\DA\\Projeto\\Cantina\\cantina\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86C0E5B7-2300-4509-92B2-F9689A797247}|Cantina\\Cantina.csproj|solutionrelative:cantina\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86C0E5B7-2300-4509-92B2-F9689A797247}|Cantina\\Cantina.csproj|C:\\Users\\ronca\\OneDrive - IPLeiria\\Desktop\\IPL\\2semestre\\DA\\Projeto\\Cantina\\cantina\\pratos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{86C0E5B7-2300-4509-92B2-F9689A797247}|Cantina\\Cantina.csproj|solutionrelative:cantina\\pratos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86C0E5B7-2300-4509-92B2-F9689A797247}|Cantina\\Cantina.csproj|C:\\Users\\ronca\\OneDrive - IPLeiria\\Desktop\\IPL\\2semestre\\DA\\Projeto\\Cantina\\cantina\\extras.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{86C0E5B7-2300-4509-92B2-F9689A797247}|Cantina\\Cantina.csproj|solutionrelative:cantina\\extras.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "utilizador.cs",
+              "DocumentMoniker": "C:\\Users\\ronca\\OneDrive - IPLeiria\\Desktop\\IPL\\2semestre\\DA\\Projeto\\Cantina\\Cantina\\Modelos\\utilizador.cs",
+              "RelativeDocumentMoniker": "Cantina\\Modelos\\utilizador.cs",
+              "ToolTip": "C:\\Users\\ronca\\OneDrive - IPLeiria\\Desktop\\IPL\\2semestre\\DA\\Projeto\\Cantina\\Cantina\\Modelos\\utilizador.cs",
+              "RelativeToolTip": "Cantina\\Modelos\\utilizador.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-09T10:14:57.825Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Principal.cs",
+              "DocumentMoniker": "C:\\Users\\ronca\\OneDrive - IPLeiria\\Desktop\\IPL\\2semestre\\DA\\Projeto\\Cantina\\Cantina\\Principal.cs",
+              "RelativeDocumentMoniker": "Cantina\\Principal.cs",
+              "ToolTip": "C:\\Users\\ronca\\OneDrive - IPLeiria\\Desktop\\IPL\\2semestre\\DA\\Projeto\\Cantina\\Cantina\\Principal.cs",
+              "RelativeToolTip": "Cantina\\Principal.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAwwDYAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-02T09:33:10.725Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Funcionario.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ronca\\OneDrive - IPLeiria\\Desktop\\IPL\\2semestre\\DA\\Projeto\\Cantina\\Cantina\\Funcionario.cs",
+              "RelativeDocumentMoniker": "Cantina\\Funcionario.cs",
+              "ToolTip": "C:\\Users\\ronca\\OneDrive - IPLeiria\\Desktop\\IPL\\2semestre\\DA\\Projeto\\Cantina\\Cantina\\Funcionario.cs [Design]",
+              "RelativeToolTip": "Cantina\\Funcionario.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-02T09:29:40.145Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Menu.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ronca\\OneDrive - IPLeiria\\Desktop\\IPL\\2semestre\\DA\\Projeto\\Cantina\\Cantina\\Menu.cs",
+              "RelativeDocumentMoniker": "Cantina\\Menu.cs",
+              "ToolTip": "C:\\Users\\ronca\\OneDrive - IPLeiria\\Desktop\\IPL\\2semestre\\DA\\Projeto\\Cantina\\Cantina\\Menu.cs [Design]",
+              "RelativeToolTip": "Cantina\\Menu.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-02T09:29:22.724Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Clientes.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ronca\\OneDrive - IPLeiria\\Desktop\\IPL\\2semestre\\DA\\Projeto\\Cantina\\Cantina\\Clientes.cs",
+              "RelativeDocumentMoniker": "Cantina\\Clientes.cs",
+              "ToolTip": "C:\\Users\\ronca\\OneDrive - IPLeiria\\Desktop\\IPL\\2semestre\\DA\\Projeto\\Cantina\\Cantina\\Clientes.cs [Design]",
+              "RelativeToolTip": "Cantina\\Clientes.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-02T09:28:51.129Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Multas.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ronca\\OneDrive - IPLeiria\\Desktop\\IPL\\2semestre\\DA\\Projeto\\Cantina\\Cantina\\Multas.cs",
+              "RelativeDocumentMoniker": "Cantina\\Multas.cs",
+              "ToolTip": "C:\\Users\\ronca\\OneDrive - IPLeiria\\Desktop\\IPL\\2semestre\\DA\\Projeto\\Cantina\\Cantina\\Multas.cs [Design]",
+              "RelativeToolTip": "Cantina\\Multas.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-02T09:28:19.335Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ronca\\OneDrive - IPLeiria\\Desktop\\IPL\\2semestre\\DA\\Projeto\\Cantina\\Cantina\\Program.cs",
+              "RelativeDocumentMoniker": "Cantina\\Program.cs",
+              "ToolTip": "C:\\Users\\ronca\\OneDrive - IPLeiria\\Desktop\\IPL\\2semestre\\DA\\Projeto\\Cantina\\Cantina\\Program.cs",
+              "RelativeToolTip": "Cantina\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-02T09:27:21.065Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Extras.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ronca\\OneDrive - IPLeiria\\Desktop\\IPL\\2semestre\\DA\\Projeto\\Cantina\\Cantina\\Extras.cs",
+              "RelativeDocumentMoniker": "Cantina\\Extras.cs",
+              "ToolTip": "C:\\Users\\ronca\\OneDrive - IPLeiria\\Desktop\\IPL\\2semestre\\DA\\Projeto\\Cantina\\Cantina\\Extras.cs [Design]",
+              "RelativeToolTip": "Cantina\\Extras.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-02T09:27:05.723Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Pratos.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ronca\\OneDrive - IPLeiria\\Desktop\\IPL\\2semestre\\DA\\Projeto\\Cantina\\Cantina\\Pratos.cs",
+              "RelativeDocumentMoniker": "Cantina\\Pratos.cs",
+              "ToolTip": "C:\\Users\\ronca\\OneDrive - IPLeiria\\Desktop\\IPL\\2semestre\\DA\\Projeto\\Cantina\\Cantina\\Pratos.cs [Design]",
+              "RelativeToolTip": "Cantina\\Pratos.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-02T09:26:44.578Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Principal.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ronca\\OneDrive - IPLeiria\\Desktop\\IPL\\2semestre\\DA\\Projeto\\Cantina\\Cantina\\Principal.cs",
+              "RelativeDocumentMoniker": "Cantina\\Principal.cs",
+              "ToolTip": "C:\\Users\\ronca\\OneDrive - IPLeiria\\Desktop\\IPL\\2semestre\\DA\\Projeto\\Cantina\\Cantina\\Principal.cs [Design]",
+              "RelativeToolTip": "Cantina\\Principal.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-02T09:26:17.644Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Reservas.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ronca\\OneDrive - IPLeiria\\Desktop\\IPL\\2semestre\\DA\\Projeto\\Cantina\\Cantina\\Reservas.cs",
+              "RelativeDocumentMoniker": "Cantina\\Reservas.cs",
+              "ToolTip": "C:\\Users\\ronca\\OneDrive - IPLeiria\\Desktop\\IPL\\2semestre\\DA\\Projeto\\Cantina\\Cantina\\Reservas.cs [Design]",
+              "RelativeToolTip": "Cantina\\Reservas.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-02T09:25:43.506Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

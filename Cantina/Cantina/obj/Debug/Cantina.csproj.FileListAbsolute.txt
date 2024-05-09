@@ -1,0 +1,13 @@
+C:\Users\ronca\OneDrive - IPLeiria\Desktop\IPL\2semestre\DA\Projeto\Cantina\Cantina\bin\Debug\Cantina.exe.config
+C:\Users\ronca\OneDrive - IPLeiria\Desktop\IPL\2semestre\DA\Projeto\Cantina\Cantina\bin\Debug\Cantina.exe
+C:\Users\ronca\OneDrive - IPLeiria\Desktop\IPL\2semestre\DA\Projeto\Cantina\Cantina\bin\Debug\Cantina.pdb
+C:\Users\ronca\OneDrive - IPLeiria\Desktop\IPL\2semestre\DA\Projeto\Cantina\Cantina\obj\Debug\Cantina.csproj.AssemblyReference.cache
+C:\Users\ronca\OneDrive - IPLeiria\Desktop\IPL\2semestre\DA\Projeto\Cantina\Cantina\obj\Debug\Cantina.Clientes.resources
+C:\Users\ronca\OneDrive - IPLeiria\Desktop\IPL\2semestre\DA\Projeto\Cantina\Cantina\obj\Debug\Cantina.Funcionario.resources
+C:\Users\ronca\OneDrive - IPLeiria\Desktop\IPL\2semestre\DA\Projeto\Cantina\Cantina\obj\Debug\Cantina.Principal.resources
+C:\Users\ronca\OneDrive - IPLeiria\Desktop\IPL\2semestre\DA\Projeto\Cantina\Cantina\obj\Debug\Cantina.Properties.Resources.resources
+C:\Users\ronca\OneDrive - IPLeiria\Desktop\IPL\2semestre\DA\Projeto\Cantina\Cantina\obj\Debug\Cantina.Reservas.resources
+C:\Users\ronca\OneDrive - IPLeiria\Desktop\IPL\2semestre\DA\Projeto\Cantina\Cantina\obj\Debug\Cantina.csproj.GenerateResource.cache
+C:\Users\ronca\OneDrive - IPLeiria\Desktop\IPL\2semestre\DA\Projeto\Cantina\Cantina\obj\Debug\Cantina.csproj.CoreCompileInputs.cache
+C:\Users\ronca\OneDrive - IPLeiria\Desktop\IPL\2semestre\DA\Projeto\Cantina\Cantina\obj\Debug\Cantina.exe
+C:\Users\ronca\OneDrive - IPLeiria\Desktop\IPL\2semestre\DA\Projeto\Cantina\Cantina\obj\Debug\Cantina.pdb
