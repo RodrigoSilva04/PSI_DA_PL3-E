@@ -56,6 +56,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CantinaContext.cs" />
+    <Compile Include="Controller\EstudanteController.cs" />
+    <Compile Include="Controller\FuncionárioController.cs" />
+    <Compile Include="Models\Cliente.cs" />
+    <Compile Include="Models\Estudante.cs" />
+    <Compile Include="Models\Extra.cs" />
+    <Compile Include="Models\Fatura.cs" />
+    <Compile Include="Models\Funcionário.cs" />
+    <Compile Include="Models\ItemFatura.cs" />
+    <Compile Include="Models\Menu.cs" />
+    <Compile Include="Models\Multa.cs" />
+    <Compile Include="Models\Prato.cs" />
+    <Compile Include="Models\Professor.cs" />
+    <Compile Include="Models\Reserva.cs" />
     <Compile Include="Models\utilizador.cs" />
     <Compile Include="Views\Clientes.cs">
       <SubType>Form</SubType>
