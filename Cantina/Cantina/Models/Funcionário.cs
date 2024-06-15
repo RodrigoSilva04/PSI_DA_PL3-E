@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Cantina.Models
+namespace GereCantina.Models
 {
-    public class Funcionário : Utilizador
+    public class Funcionario : Utilizador
     {
         public string Username { get; set; }
     }

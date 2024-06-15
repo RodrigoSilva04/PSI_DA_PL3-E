@@ -4,17 +4,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data.Entity;
+using System.ComponentModel.DataAnnotations;
 
-namespace Cantina
+namespace GereCantina
 {
     //Criar a classe utilizador
     public class Utilizador
     {
         //Criar as 3 variaveis
-        public int id { get; set; }
-        public string nome { get; set; }
-        public string nif { get; set; }
-        
+        public int Id { get; set; }
+        public string Nome { get; set; }
+        public string Nif { get; set; }
         
     }
 }

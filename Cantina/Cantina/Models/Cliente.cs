@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Cantina.Models
+namespace GereCantina.Models
 {
     //Criar a classe Cliente que é uma subclasse de Utilizador
     public class Cliente : Utilizador
     {
         //Criar a variavel saldo 
-        private int saldo;
+        public int saldo;
     }
 }

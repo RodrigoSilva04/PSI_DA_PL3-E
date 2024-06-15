@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Data.Entity;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using GereCantina.Models;
 
 namespace Cantina
 {
@@ -16,7 +18,10 @@ namespace Cantina
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Principal());
+            Application.Run(new PrincipalForm());
+
         }
+
+
     }
 }

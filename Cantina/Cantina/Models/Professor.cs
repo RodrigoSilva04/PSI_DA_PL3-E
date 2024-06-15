@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Cantina.Models
+namespace GereCantina.Models
 {
     public class Professor : Cliente
     {
