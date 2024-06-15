@@ -1,0 +1,46 @@
+C:\Users\ronca\OneDrive - IPLeiria\Desktop\IPL\2semestre\DA\Projeto\Cantina\Cantina\bin\Debug\Cantina.exe.config
+C:\Users\ronca\OneDrive - IPLeiria\Desktop\IPL\2semestre\DA\Projeto\Cantina\Cantina\bin\Debug\Cantina.exe
+C:\Users\ronca\OneDrive - IPLeiria\Desktop\IPL\2semestre\DA\Projeto\Cantina\Cantina\bin\Debug\Cantina.pdb
+C:\Users\ronca\OneDrive - IPLeiria\Desktop\IPL\2semestre\DA\Projeto\Cantina\Cantina\bin\Debug\EntityFramework.dll
+C:\Users\ronca\OneDrive - IPLeiria\Desktop\IPL\2semestre\DA\Projeto\Cantina\Cantina\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ronca\OneDrive - IPLeiria\Desktop\IPL\2semestre\DA\Projeto\Cantina\Cantina\bin\Debug\EntityFramework.xml
+C:\Users\ronca\OneDrive - IPLeiria\Desktop\IPL\2semestre\DA\Projeto\Cantina\Cantina\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ronca\OneDrive - IPLeiria\Desktop\IPL\2semestre\DA\Projeto\Cantina\Cantina\obj\Debug\GereCantina.csproj.AssemblyReference.cache
+C:\Users\ronca\OneDrive - IPLeiria\Desktop\IPL\2semestre\DA\Projeto\Cantina\Cantina\obj\Debug\Cantina.ClientesForm.resources
+C:\Users\ronca\OneDrive - IPLeiria\Desktop\IPL\2semestre\DA\Projeto\Cantina\Cantina\obj\Debug\Cantina.Views.ExtrasForm.resources
+C:\Users\ronca\OneDrive - IPLeiria\Desktop\IPL\2semestre\DA\Projeto\Cantina\Cantina\obj\Debug\Cantina.FuncionarioForm.resources
+C:\Users\ronca\OneDrive - IPLeiria\Desktop\IPL\2semestre\DA\Projeto\Cantina\Cantina\obj\Debug\Cantina.PrincipalForm.resources
+C:\Users\ronca\OneDrive - IPLeiria\Desktop\IPL\2semestre\DA\Projeto\Cantina\Cantina\obj\Debug\Cantina.Properties.Resources.resources
+C:\Users\ronca\OneDrive - IPLeiria\Desktop\IPL\2semestre\DA\Projeto\Cantina\Cantina\obj\Debug\Cantina.ReservasForm.resources
+C:\Users\ronca\OneDrive - IPLeiria\Desktop\IPL\2semestre\DA\Projeto\Cantina\Cantina\obj\Debug\GereCantina.csproj.GenerateResource.cache
+C:\Users\ronca\OneDrive - IPLeiria\Desktop\IPL\2semestre\DA\Projeto\Cantina\Cantina\obj\Debug\GereCantina.csproj.CoreCompileInputs.cache
+C:\Users\ronca\OneDrive - IPLeiria\Desktop\IPL\2semestre\DA\Projeto\Cantina\Cantina\obj\Debug\GereCant.D9B68AB1.Up2Date
+C:\Users\ronca\OneDrive - IPLeiria\Desktop\IPL\2semestre\DA\Projeto\Cantina\Cantina\obj\Debug\Cantina.exe
+C:\Users\ronca\OneDrive - IPLeiria\Desktop\IPL\2semestre\DA\Projeto\Cantina\Cantina\obj\Debug\Cantina.pdb
+C:\Users\ronca\OneDrive - IPLeiria\Desktop\IPL\2semestre\DA\Projeto\Cantina\Cantina\obj\Debug\Cantina.Migrations.Inicial.resources
+C:\Users\ronca\OneDrive - IPLeiria\Desktop\IPL\2semestre\DA\Projeto\Cantina\Cantina\obj\Debug\Cantina.Migrations.AdicionarTabelaFuncionarios.resources
+C:\Users\ronca\OneDrive - IPLeiria\Desktop\IPL\2semestre\DA\Projeto\Cantina\Cantina\obj\Debug\Cantina.Migrations.UpdateTabelaFuncionarios.resources
+C:\Users\ronca\OneDrive - IPLeiria\Desktop\IPL\2semestre\DA\Projeto\Cantina\Cantina\obj\Debug\Cantina.Migrations.UpdateDb.resources
+D:\IPL\Projetos\ProjetoDA\ProjetoDA-main\Cantina\Cantina\obj\Debug\GereCantina.csproj.AssemblyReference.cache
+D:\IPL\Projetos\ProjetoDA\ProjetoDA-main\Cantina\Cantina\obj\Debug\Cantina.Migrations.Inicial.resources
+D:\IPL\Projetos\ProjetoDA\ProjetoDA-main\Cantina\Cantina\obj\Debug\Cantina.Migrations.AdicionarTabelaFuncionarios.resources
+D:\IPL\Projetos\ProjetoDA\ProjetoDA-main\Cantina\Cantina\obj\Debug\Cantina.Migrations.UpdateTabelaFuncionarios.resources
+D:\IPL\Projetos\ProjetoDA\ProjetoDA-main\Cantina\Cantina\obj\Debug\Cantina.Migrations.UpdateDb.resources
+D:\IPL\Projetos\ProjetoDA\ProjetoDA-main\Cantina\Cantina\obj\Debug\Cantina.ClientesForm.resources
+D:\IPL\Projetos\ProjetoDA\ProjetoDA-main\Cantina\Cantina\obj\Debug\Cantina.Views.ExtrasForm.resources
+D:\IPL\Projetos\ProjetoDA\ProjetoDA-main\Cantina\Cantina\obj\Debug\Cantina.FuncionarioForm.resources
+D:\IPL\Projetos\ProjetoDA\ProjetoDA-main\Cantina\Cantina\obj\Debug\Cantina.PrincipalForm.resources
+D:\IPL\Projetos\ProjetoDA\ProjetoDA-main\Cantina\Cantina\obj\Debug\Cantina.Properties.Resources.resources
+D:\IPL\Projetos\ProjetoDA\ProjetoDA-main\Cantina\Cantina\obj\Debug\Cantina.ReservasForm.resources
+D:\IPL\Projetos\ProjetoDA\ProjetoDA-main\Cantina\Cantina\obj\Debug\GereCantina.csproj.GenerateResource.cache
+D:\IPL\Projetos\ProjetoDA\ProjetoDA-main\Cantina\Cantina\obj\Debug\GereCantina.csproj.CoreCompileInputs.cache
+D:\IPL\Projetos\ProjetoDA\ProjetoDA-main\Cantina\Cantina\obj\Debug\Cantina.exe
+D:\IPL\Projetos\ProjetoDA\ProjetoDA-main\Cantina\Cantina\obj\Debug\Cantina.pdb
+D:\IPL\Projetos\ProjetoDA\ProjetoDA-main\Cantina\Cantina\bin\Debug\Cantina.exe.config
+D:\IPL\Projetos\ProjetoDA\ProjetoDA-main\Cantina\Cantina\bin\Debug\Cantina.exe
+D:\IPL\Projetos\ProjetoDA\ProjetoDA-main\Cantina\Cantina\bin\Debug\Cantina.pdb
+D:\IPL\Projetos\ProjetoDA\ProjetoDA-main\Cantina\Cantina\bin\Debug\EntityFramework.dll
+D:\IPL\Projetos\ProjetoDA\ProjetoDA-main\Cantina\Cantina\bin\Debug\EntityFramework.SqlServer.dll
+D:\IPL\Projetos\ProjetoDA\ProjetoDA-main\Cantina\Cantina\bin\Debug\EntityFramework.xml
+D:\IPL\Projetos\ProjetoDA\ProjetoDA-main\Cantina\Cantina\bin\Debug\EntityFramework.SqlServer.xml
+D:\IPL\Projetos\ProjetoDA\ProjetoDA-main\Cantina\Cantina\obj\Debug\GereCant.D9B68AB1.Up2Date
