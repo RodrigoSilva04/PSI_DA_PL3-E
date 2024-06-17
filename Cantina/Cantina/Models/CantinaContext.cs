@@ -33,7 +33,7 @@ namespace GereCantina.Models
 
             // Remove a convenção de pluralização de nomes de tabelas
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
-
+            modelBuilder.Entity<Utilizador>().ToTable("Utilizadores");
             // Configurações adicionais de mapeamento
             modelBuilder.Entity<Funcionario>().ToTable("Funcionarios");
             modelBuilder.Entity<Cliente>().ToTable("Clientes");

@@ -22,11 +22,6 @@ C:\Users\ronca\OneDrive - IPLeiria\Desktop\IPL\2semestre\DA\Projeto\Cantina\Cant
 C:\Users\ronca\OneDrive - IPLeiria\Desktop\IPL\2semestre\DA\Projeto\Cantina\Cantina\obj\Debug\Cantina.Migrations.UpdateTabelaFuncionarios.resources
 C:\Users\ronca\OneDrive - IPLeiria\Desktop\IPL\2semestre\DA\Projeto\Cantina\Cantina\obj\Debug\Cantina.Migrations.UpdateDb.resources
 D:\IPL\Projetos\ProjetoDA\ProjetoDA-main\Cantina\Cantina\obj\Debug\GereCantina.csproj.AssemblyReference.cache
-D:\IPL\Projetos\ProjetoDA\ProjetoDA-main\Cantina\Cantina\obj\Debug\Cantina.Migrations.Inicial.resources
-D:\IPL\Projetos\ProjetoDA\ProjetoDA-main\Cantina\Cantina\obj\Debug\Cantina.Migrations.AdicionarTabelaFuncionarios.resources
-D:\IPL\Projetos\ProjetoDA\ProjetoDA-main\Cantina\Cantina\obj\Debug\Cantina.Migrations.UpdateTabelaFuncionarios.resources
-D:\IPL\Projetos\ProjetoDA\ProjetoDA-main\Cantina\Cantina\obj\Debug\Cantina.Migrations.UpdateDb.resources
-D:\IPL\Projetos\ProjetoDA\ProjetoDA-main\Cantina\Cantina\obj\Debug\Cantina.ClientesForm.resources
 D:\IPL\Projetos\ProjetoDA\ProjetoDA-main\Cantina\Cantina\obj\Debug\Cantina.Views.ExtrasForm.resources
 D:\IPL\Projetos\ProjetoDA\ProjetoDA-main\Cantina\Cantina\obj\Debug\Cantina.FuncionarioForm.resources
 D:\IPL\Projetos\ProjetoDA\ProjetoDA-main\Cantina\Cantina\obj\Debug\Cantina.PrincipalForm.resources
@@ -44,3 +39,6 @@ D:\IPL\Projetos\ProjetoDA\ProjetoDA-main\Cantina\Cantina\bin\Debug\EntityFramewo
 D:\IPL\Projetos\ProjetoDA\ProjetoDA-main\Cantina\Cantina\bin\Debug\EntityFramework.xml
 D:\IPL\Projetos\ProjetoDA\ProjetoDA-main\Cantina\Cantina\bin\Debug\EntityFramework.SqlServer.xml
 D:\IPL\Projetos\ProjetoDA\ProjetoDA-main\Cantina\Cantina\obj\Debug\GereCant.D9B68AB1.Up2Date
+D:\IPL\Projetos\ProjetoDA\ProjetoDA-main\Cantina\Cantina\obj\Debug\Cantina.Migrations.Teste.resources
+D:\IPL\Projetos\ProjetoDA\ProjetoDA-main\Cantina\Cantina\obj\Debug\Cantina.MenuForm.resources
+D:\IPL\Projetos\ProjetoDA\ProjetoDA-main\Cantina\Cantina\obj\Debug\Cantina.ClientesForm.resources

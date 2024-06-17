@@ -5,10 +5,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.Entity;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace GereCantina
 {
     //Criar a classe utilizador
+    [Table("Utilizadores")] // Define o nome correto da tabela
     public class Utilizador
     {
         //Criar as 3 variaveis

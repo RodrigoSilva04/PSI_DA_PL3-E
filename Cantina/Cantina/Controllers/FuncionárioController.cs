@@ -26,37 +26,37 @@ namespace Cantina.Controllers
         //Remover
         public void RemoverFuncionário(Funcionario funcionario)
         {
-            using (var context = new CantinaContext())
+            using (var db = new CantinaContext())
             {
-                context.Entry(funcionario).State = EntityState.Deleted;
-                context.SaveChanges();
+                db.Entry(funcionario).State = EntityState.Deleted;
+                db.SaveChanges();
             }
         }
         //Atualizar
         public void AtualizarFuncionário(Funcionario funcionario)
         {
-            using (var context = new CantinaContext())
+            using (var db = new CantinaContext())
             {
-                context.Entry(funcionario).State = EntityState.Modified;
-                context.SaveChanges();
+                db.Entry(funcionario).State = EntityState.Modified;
+                db.SaveChanges();
             }
         }
 
         //Listar
         public List<Funcionario> ListarFuncionários()
         {
-            using (var context = new CantinaContext())
+            using (var db = new CantinaContext())
             {
-                return context.Funcionarios.ToList();
+                return db.Funcionarios.ToList();
             }
         }
 
         //função para buscar funcionário por nome
         public Funcionario BuscarFuncionarioPorNome(string nome)
         {
-            using (var context = new CantinaContext())
+            using (var db = new CantinaContext())
             {
-                return context.Funcionarios.FirstOrDefault(f => f.Nome == nome);
+                return db.Funcionarios.FirstOrDefault(f => f.Nome == nome);
             }
         }
     }

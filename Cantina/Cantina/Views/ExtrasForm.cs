@@ -16,5 +16,10 @@ namespace Cantina.Views
         {
             InitializeComponent();
         }
+
+        private void Extras_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

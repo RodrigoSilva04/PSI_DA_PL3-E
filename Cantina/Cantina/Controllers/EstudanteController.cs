@@ -15,52 +15,52 @@ namespace GereCantina.Controllers
 
         public void AdicionarEstudante(Estudante estudante)
         {
-            using (var context = new CantinaContext())
+            using (var db = new CantinaContext())
             {
-                context.Estudantes.Add(estudante);
-                context.SaveChanges();
+                db.Estudantes.Add(estudante);
+                db.SaveChanges();
             }
         }
 
         public void AtualizarEstudante(Estudante estudante)
         {
-            using (var context = new CantinaContext())
+            using (var db = new CantinaContext())
             {
-                context.Entry(estudante).State = EntityState.Modified;
-                context.SaveChanges();
+                db.Entry(estudante).State = EntityState.Modified;
+                db.SaveChanges();
             }
         }
 
         public void RemoverEstudante(Estudante estudante)
         {
-            using (var context = new CantinaContext())
+            using (var db = new CantinaContext())
             {
-                context.Entry(estudante).State = EntityState.Deleted;
-                context.SaveChanges();
+                db.Entry(estudante).State = EntityState.Deleted;
+                db.SaveChanges();
             }
         }
 
         public List<Estudante> ListarEstudantes()
         {
-            using (var context = new CantinaContext())
+            using (var db = new CantinaContext())
             {
-                return context.Estudantes.ToList();
+                return db.Estudantes.ToList();
             }
         }
 
         public Estudante BuscarEstudantePorId(int id)
         {
-            using (var context = new CantinaContext())
+            using (var db = new CantinaContext())
             {
-                return context.Estudantes.Find(id);
+                return db.Estudantes.Find(id);
             }
         }
 
         public Estudante BuscarEstudantePorNumero(string numero)
         {
-            using (var context = new CantinaContext())
+            using (var db = new CantinaContext())
             {
-                return context.Estudantes.FirstOrDefault(e => e.NumEstudante == numero);
+                return db.Estudantes.FirstOrDefault(e => e.NumEstudante == numero);
             }
         }
     }
