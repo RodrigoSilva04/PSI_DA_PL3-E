@@ -11,6 +11,7 @@ namespace GereCantina.Models
         public int id { get; set; }
         public string descricao { get; set; }
         public string tipo { get; set; }
+        public int quantidade { get; set; }
 
         public bool ativo { get; set; }
         public ICollection<Menu> Menus { get; set; }

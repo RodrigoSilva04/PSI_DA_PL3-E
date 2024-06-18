@@ -46,8 +46,6 @@ namespace GereCantina.Models
             modelBuilder.Entity<Menu>().ToTable("Menus");
             modelBuilder.Entity<Fatura>().ToTable("Faturas");
             modelBuilder.Entity<ItemFatura>().ToTable("ItensFatura");
-
-            // Caso tenha propriedades complexas ou relações, você pode configurá-las aqui
         }
     }
 }

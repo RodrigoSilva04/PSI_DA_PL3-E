@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Cantina.Controllers;
+using Cantina.Views;
 using GereCantina.Models;
 
 
@@ -17,30 +18,16 @@ namespace Cantina
 {
     public partial class PrincipalForm : Form
     {
+
         public PrincipalForm()
         {
             InitializeComponent();
             CarregarFuncionarios();
-            InitializeTable();
-        }
-        private void InitializeTable()
-        {
-            this.tableLayoutPanelSemana = new System.Windows.Forms.TableLayoutPanel();
-            this.SuspendLayout();
+            FillTlMenusSemana();
 
-            // TableLayoutPanel
-            this.tableLayoutPanelSemana.ColumnCount = 5;
-            this.tableLayoutPanelSemana.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanelSemana.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanelSemana.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanelSemana.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanelSemana.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanelSemana.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tableLayoutPanelSemana.RowCount = 1;
-            this.tableLayoutPanelSemana.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 200F));
-            this.tableLayoutPanelSemana.Size = new System.Drawing.Size(800, 200);
-            this.Controls.Add(this.tableLayoutPanelSemana);
+            
         }
+       
         private void CarregarFuncionarios()
         {
             FuncionárioController funcionárioController = new FuncionárioController();
@@ -52,6 +39,68 @@ namespace Cantina
             {
                 comboBox1.Items.Add(funcionário.Nome);
             }
+        }
+        private void FillTlMenusSemana()
+        {
+            var menus = new Dictionary<string, List<string>>
+    {
+        { "Segunda-feira", new List<string> { "Prato 1", "Extra 1" } },
+        { "Terça-feira", new List<string> { "Prato 2", "Extra 2" } },
+        { "Quarta-feira", new List<string> { "Prato 3", "Extra 3" } },
+        { "Quinta-feira", new List<string> { "Prato 4", "Extra 4" } },
+        { "Sexta-feira", new List<string> { "Prato 5", "Extra 5" } },
+    };
+
+            int columnIndex = 0;
+            foreach (var dia in menus.Keys)
+            {
+                // Create a Panel for the current day
+                var panelDia = new Panel
+                {
+                    Dock = DockStyle.Fill,
+                    BorderStyle = BorderStyle.FixedSingle
+                };
+
+                // Create a Label for the day and add it to the column header
+                var labelDia = new Label
+                {
+                    Text = dia,
+                    Dock = DockStyle.Top,
+                    TextAlign = ContentAlignment.MiddleCenter
+                };
+                tl_MenusSemana.Controls.Add(labelDia, columnIndex, 0);
+
+                // Create a Label to display the menu items
+                var labelMenu = new Label
+                {
+                    Text = string.Join(Environment.NewLine, menus[dia]),
+                    Dock = DockStyle.Fill,
+                    TextAlign = ContentAlignment.TopCenter
+                };
+
+                // Create a Button for additional details
+                var buttonDetalhes = new Button
+                {
+                    Text = "Detalhes",
+                    Dock = DockStyle.Bottom,
+                    Tag = dia // Save the day as Tag to use in the click event
+                };
+                buttonDetalhes.Click += ButtonDetalhes_Click;
+
+                panelDia.Controls.Add(labelMenu);
+                panelDia.Controls.Add(buttonDetalhes);
+
+                // Add the day's panel to the TableLayoutPanel
+                tl_MenusSemana.Controls.Add(panelDia, columnIndex, 1); // Adjust the row index accordingly if needed
+
+                columnIndex++;
+            }
+        }
+
+        private void ButtonDetalhes_Click(object sender, EventArgs e)
+        {
+            // Ir para a janela de reservas com o dia selecionado
+
         }
         private void bt_sair_Click(object sender, EventArgs e)
         {
@@ -81,7 +130,8 @@ namespace Cantina
         {
             //Abrir a janela de extras
             this.Hide();
-            
+            ExtrasForm extras = new ExtrasForm();
+            extras.ShowDialog();
             this.Close();
         }
 
@@ -148,5 +198,12 @@ namespace Cantina
         {
 
         }
+
+        private void PrincipalForm_Load(object sender, EventArgs e)
+        {
+            
+        }
+       
+
     }
 }

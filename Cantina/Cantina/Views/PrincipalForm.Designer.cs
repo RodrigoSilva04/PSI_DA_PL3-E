@@ -44,7 +44,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.bt_loginUt = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.tl_MenusSemana = new System.Windows.Forms.TableLayoutPanel();
             this.groupBox1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -63,7 +63,7 @@
             // bt_reservas
             // 
             this.bt_reservas.Location = new System.Drawing.Point(107, 2);
-            this.bt_reservas.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bt_reservas.Margin = new System.Windows.Forms.Padding(2);
             this.bt_reservas.Name = "bt_reservas";
             this.bt_reservas.Size = new System.Drawing.Size(101, 50);
             this.bt_reservas.TabIndex = 1;
@@ -74,7 +74,7 @@
             // bt_Pratos
             // 
             this.bt_Pratos.Location = new System.Drawing.Point(212, 2);
-            this.bt_Pratos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bt_Pratos.Margin = new System.Windows.Forms.Padding(2);
             this.bt_Pratos.Name = "bt_Pratos";
             this.bt_Pratos.Size = new System.Drawing.Size(101, 50);
             this.bt_Pratos.TabIndex = 2;
@@ -85,7 +85,7 @@
             // bt_Extras
             // 
             this.bt_Extras.Location = new System.Drawing.Point(317, 2);
-            this.bt_Extras.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bt_Extras.Margin = new System.Windows.Forms.Padding(2);
             this.bt_Extras.Name = "bt_Extras";
             this.bt_Extras.Size = new System.Drawing.Size(101, 50);
             this.bt_Extras.TabIndex = 3;
@@ -96,7 +96,7 @@
             // bt_Multas
             // 
             this.bt_Multas.Location = new System.Drawing.Point(2, 2);
-            this.bt_Multas.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bt_Multas.Margin = new System.Windows.Forms.Padding(2);
             this.bt_Multas.Name = "bt_Multas";
             this.bt_Multas.Size = new System.Drawing.Size(101, 50);
             this.bt_Multas.TabIndex = 4;
@@ -107,7 +107,7 @@
             // bt_Clientes
             // 
             this.bt_Clientes.Location = new System.Drawing.Point(422, 2);
-            this.bt_Clientes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bt_Clientes.Margin = new System.Windows.Forms.Padding(2);
             this.bt_Clientes.Name = "bt_Clientes";
             this.bt_Clientes.Size = new System.Drawing.Size(101, 50);
             this.bt_Clientes.TabIndex = 5;
@@ -118,7 +118,7 @@
             // bt_Menu
             // 
             this.bt_Menu.Location = new System.Drawing.Point(2, 56);
-            this.bt_Menu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bt_Menu.Margin = new System.Windows.Forms.Padding(2);
             this.bt_Menu.Name = "bt_Menu";
             this.bt_Menu.Size = new System.Drawing.Size(101, 50);
             this.bt_Menu.TabIndex = 6;
@@ -129,7 +129,7 @@
             // bt_Funcionários
             // 
             this.bt_Funcionários.Location = new System.Drawing.Point(107, 56);
-            this.bt_Funcionários.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bt_Funcionários.Margin = new System.Windows.Forms.Padding(2);
             this.bt_Funcionários.Name = "bt_Funcionários";
             this.bt_Funcionários.Size = new System.Drawing.Size(101, 50);
             this.bt_Funcionários.TabIndex = 7;
@@ -140,7 +140,7 @@
             // bt_sair
             // 
             this.bt_sair.Location = new System.Drawing.Point(212, 56);
-            this.bt_sair.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bt_sair.Margin = new System.Windows.Forms.Padding(2);
             this.bt_sair.Name = "bt_sair";
             this.bt_sair.Size = new System.Drawing.Size(101, 50);
             this.bt_sair.TabIndex = 8;
@@ -152,9 +152,9 @@
             // 
             this.groupBox1.Controls.Add(this.flowLayoutPanel1);
             this.groupBox1.Location = new System.Drawing.Point(364, 275);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox1.Size = new System.Drawing.Size(597, 156);
             this.groupBox1.TabIndex = 9;
             this.groupBox1.TabStop = false;
@@ -171,7 +171,7 @@
             this.flowLayoutPanel1.Controls.Add(this.bt_Funcionários);
             this.flowLayoutPanel1.Controls.Add(this.bt_sair);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(21, 17);
-            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(557, 122);
             this.flowLayoutPanel1.TabIndex = 11;
@@ -179,8 +179,8 @@
             // 
             // monthCalendar1
             // 
-            this.monthCalendar1.Location = new System.Drawing.Point(38, 62);
-            this.monthCalendar1.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
+            this.monthCalendar1.Location = new System.Drawing.Point(541, 91);
+            this.monthCalendar1.Margin = new System.Windows.Forms.Padding(7);
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.TabIndex = 10;
             // 
@@ -188,7 +188,7 @@
             // 
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(841, 30);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(92, 21);
             this.comboBox1.TabIndex = 11;
@@ -229,20 +229,21 @@
             this.label3.Visible = false;
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
-            // tableLayoutPanel1
+            // tl_MenusSemana
             // 
-            this.tableLayoutPanel1.ColumnCount = 4;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(49, 292);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 2;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(200, 100);
-            this.tableLayoutPanel1.TabIndex = 15;
+            this.tl_MenusSemana.ColumnCount = 5;
+            this.tl_MenusSemana.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tl_MenusSemana.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tl_MenusSemana.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tl_MenusSemana.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tl_MenusSemana.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tl_MenusSemana.Location = new System.Drawing.Point(26, 153);
+            this.tl_MenusSemana.Name = "tl_MenusSemana";
+            this.tl_MenusSemana.RowCount = 1;
+            this.tl_MenusSemana.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tl_MenusSemana.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 100F));
+            this.tl_MenusSemana.Size = new System.Drawing.Size(400, 100);
+            this.tl_MenusSemana.TabIndex = 15;
             // 
             // PrincipalForm
             // 
@@ -250,7 +251,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(970, 482);
-            this.Controls.Add(this.tableLayoutPanel1);
+            this.Controls.Add(this.tl_MenusSemana);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.bt_loginUt);
             this.Controls.Add(this.label2);
@@ -258,9 +259,10 @@
             this.Controls.Add(this.monthCalendar1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "PrincipalForm";
             this.Text = "Principal";
+            this.Load += new System.EventHandler(this.PrincipalForm_Load);
             this.groupBox1.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -286,7 +288,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button bt_loginUt;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanelSemana;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.TableLayoutPanel tl_MenusSemana;
     }
 }

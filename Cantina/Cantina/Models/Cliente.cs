@@ -10,6 +10,6 @@ namespace GereCantina.Models
     public class Cliente : Utilizador
     {
         //Criar a variavel saldo 
-        public int saldo;
+        public double Saldo { get; set; }
     }
 }

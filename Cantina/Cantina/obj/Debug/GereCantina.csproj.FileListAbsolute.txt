@@ -42,3 +42,7 @@ D:\IPL\Projetos\ProjetoDA\ProjetoDA-main\Cantina\Cantina\obj\Debug\GereCant.D9B6
 D:\IPL\Projetos\ProjetoDA\ProjetoDA-main\Cantina\Cantina\obj\Debug\Cantina.Migrations.Teste.resources
 D:\IPL\Projetos\ProjetoDA\ProjetoDA-main\Cantina\Cantina\obj\Debug\Cantina.MenuForm.resources
 D:\IPL\Projetos\ProjetoDA\ProjetoDA-main\Cantina\Cantina\obj\Debug\Cantina.ClientesForm.resources
+D:\IPL\Projetos\ProjetoDA\ProjetoDA-main\Cantina\Cantina\obj\Debug\Cantina.Migrations.SaldoCliente.resources
+D:\IPL\Projetos\ProjetoDA\ProjetoDA-main\Cantina\Cantina\obj\Debug\Cantina.PratosForm.resources
+D:\IPL\Projetos\ProjetoDA\ProjetoDA-main\Cantina\Cantina\obj\Debug\Cantina.Migrations.Quantidade.resources
+D:\IPL\Projetos\ProjetoDA\ProjetoDA-main\Cantina\Cantina\obj\Debug\Cantina.Migrations.SaldoDouble.resources

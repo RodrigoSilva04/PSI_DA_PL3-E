@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Cantina.Controllers;
+using GereCantina.Models;
 
 namespace Cantina
 {
@@ -15,6 +17,19 @@ namespace Cantina
         public ReservasForm()
         {
             InitializeComponent();
+            
+        }
+
+        private void LBox_PratosReserva_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+        private void CarregarListBoxs()
+        {
+            //Carregar a listbox com os menus
+            MenuController menuController = new MenuController();
+            List<GereCantina.Models.Menu> menus = menuController.ListarMenus();
+            
         }
     }
 }
