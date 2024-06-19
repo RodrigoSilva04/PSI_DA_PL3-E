@@ -30,10 +30,9 @@ namespace Cantina
 
         private void LBox_PratosReserva_SelectedIndexChanged(object sender, EventArgs e)
         {
-            //Se for um prato selecionado aparecer a quantidade disponivel desse prato se for um extra aparecer a quantidade disponivel desse extra
+            //Se for um prato selecionado aparecer a quantidade disponivel desse prato 
             if (LBox_PratosReserva.SelectedItem != null)
             {
-                
                 try
                 {
                     if (LBox_PratosReserva.SelectedItem is Prato)
@@ -41,16 +40,10 @@ namespace Cantina
                         Prato prato = (Prato)LBox_PratosReserva.SelectedItem;
                         TB_qntPrato.Text = prato.quantidade.ToString();
                     }
-                    else if (LBox_PratosReserva.SelectedItem is Extra)
-                    {
-                        Extra extra = (Extra)LBox_PratosReserva.SelectedItem;
-                        TB_qntExtra.Text = extra.Quantidade.ToString();
-                    }else
+                    else
                     {
                         ResetQuantidades();
                     }
-                    
-
                 }
                 catch (InvalidCastException ex)
                 {
@@ -61,6 +54,7 @@ namespace Cantina
                     MessageBox.Show($"Ocorreu um erro ao processar a seleção: {ex.Message}", "Erro Desconhecido", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
+            
         }
         private void CarregarListBoxs()
         {
@@ -123,11 +117,21 @@ namespace Cantina
                         //Adicionar os extras à listbox com o nome do extra e o preco de cada extra 
                         
                         LBox_ExtrasReserva.Items.Add(extra);
-                        LBox_ExtrasReserva.DisplayMember = $"{extra.Descricao} - {extra.Preco}€";
+                        LBox_ExtrasReserva.DisplayMember = "Descricao";
                         // Set the format string as DisplayMember for LBox_ExtrasReserva
-                        
+
 
                     }
+                    //Se ja estiver pratos e extras na reserva limpa a reserva
+                    if (LBox_Reserva.Items.Count > 0)
+                    {
+                        LBox_Reserva.Items.Clear();
+                        MessageBox.Show("Selecionou outro menu os itens da reserva foram limpos");
+                    }
+                    tb_Total.Text = CalcularTotal().ToString();
+                    ResetQuantidades();
+                    
+                    
 
                 }
                 catch (InvalidCastException ex)
@@ -157,7 +161,11 @@ namespace Cantina
                         var prato = item as Prato;
                         if (prato != null)
                         {
-                            LBox_Reserva.Items.Add($"Prato: {prato.descricao} - Quantidade disponivel: {prato.quantidade}");
+                            LBox_Reserva.Items.Add(prato);
+                            LBox_Reserva.DisplayMember = "Descricao";
+                            //Mostrar a descricao do prato
+
+
                         }
                     }
 
@@ -189,8 +197,9 @@ namespace Cantina
                         if (extra != null)
                         {
                             LBox_Reserva.Items.Add(extra);
-                            LBox_Reserva.Items.Add($"Extra: {extra.Descricao} - Quantidade disponivel: {extra.Quantidade}");
-                        }else
+                            LBox_ExtrasReserva.DisplayMember = "Descricao";
+                        }
+                        else
                         {
                             MessageBox.Show("Nao deu");
                         }
@@ -211,12 +220,12 @@ namespace Cantina
                 MessageBox.Show("Selecione pelo menos um prato, e um cliente para adicionar à reserva.", "Seleção Inválida", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
-        private decimal CalcularTotal()
+        private double CalcularTotal()
         {
-            decimal total = 0;
+            double total = 0;
 
             // Parse the base price from tb_PrecoMenu.Text
-            if (decimal.TryParse(tb_PrecoMenu.Text, out decimal precoMenu))
+            if (double.TryParse(tb_PrecoMenu.Text, out double precoMenu))
             {
                 total += precoMenu;
             }
@@ -244,6 +253,37 @@ namespace Cantina
             }
 
             return total;
+        }
+
+        private void LBox_ExtrasReserva_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //Extra aparecer a quantidade disponivel desse extra
+            if (LBox_ExtrasReserva.SelectedItem != null)
+            {
+                try
+                {
+                    if (LBox_ExtrasReserva.SelectedItem is Extra)
+                    {
+                        Extra extra = (Extra)LBox_ExtrasReserva.SelectedItem;
+                        TB_qntExtra.Text = extra.Quantidade.ToString();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Nao deu");
+                        ResetQuantidades();
+                    }
+                }
+                catch (InvalidCastException ex)
+                {
+                    MessageBox.Show("Ocorreu um erro ao carregar o extra selecionado. Tente novamente.", "Erro de Tipo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Ocorreu um erro ao processar a seleção: {ex.Message}", "Erro Desconhecido", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+           
+
         }
     }
 }

@@ -112,8 +112,8 @@ namespace Cantina
                 {
                     DataHora = dataHora,
                     QtdDisponivel = int.Parse(tb_Quantidade.Text),
-                    PrecoEstudante = decimal.Parse(TB_precoEstudante.Text),
-                    PrecoProfessor = decimal.Parse(TB_precoProfessor.Text),
+                    PrecoEstudante = double.Parse(TB_precoEstudante.Text),
+                    PrecoProfessor = double.Parse(TB_precoProfessor.Text),
                     Pratos = pratos, // Atribui a lista de pratos à propriedade Pratos
                     Extras = extras  // Atribui a lista de extras à propriedade Extras
                 };
@@ -244,13 +244,13 @@ namespace Cantina
                     foreach (Prato prato in menu.Pratos)
                     {
                         LBox_MenuAtual.Items.Add(prato);
+                        LBox_MenuAtual.DisplayMember = "descricao";
                     }
                     foreach (Extra extra in menu.Extras)
                     {
                         LBox_MenuAtual.Items.Add(extra);
+                        LBox_MenuAtual.DisplayMember = "Descricao";
                     }
-                    LBox_PratosMenu.DisplayMember = "descricao";
-                    LBox_ExtrasMenu.DisplayMember = "Descricao";
 
                 }
                 catch (InvalidCastException ex)
@@ -305,8 +305,8 @@ namespace Cantina
 
                     // Atualizar os campos do menu com os novos valores da interface do usuário
                     menu.QtdDisponivel = int.Parse(tb_Quantidade.Text);
-                    menu.PrecoEstudante = decimal.Parse(TB_precoEstudante.Text);
-                    menu.PrecoProfessor = decimal.Parse(TB_precoProfessor.Text);
+                    menu.PrecoEstudante = double.Parse(TB_precoEstudante.Text);
+                    menu.PrecoProfessor = double.Parse(TB_precoProfessor.Text);
                     menu.Pratos = LBox_MenuAtual.Items.OfType<Prato>().ToList();
                     menu.Extras = LBox_MenuAtual.Items.OfType<Extra>().ToList();
 
@@ -338,7 +338,10 @@ namespace Cantina
             }
         }
 
+        private void LBox_MenuAtual_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
+        }
     }
     
 }

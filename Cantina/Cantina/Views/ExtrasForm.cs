@@ -52,7 +52,7 @@ namespace Cantina.Views
                 ExtraController extraController = new ExtraController();
                 Extra extra = new Extra();
                 extra.Descricao = TB_Descricao.Text;
-                extra.Preco = Convert.ToDecimal(TB_Preco.Text);
+                extra.Preco = Convert.ToDouble(TB_Preco.Text);
                 extra.Quantidade = Convert.ToInt32(tb_Quantidade.Text);
                 //Se a checkbox estiver selecionada o extra fica ativo
                 if (ck_Ativo.Checked)
@@ -156,7 +156,7 @@ namespace Cantina.Views
                 if (extra != null)
                 {
                     extra.Descricao = TB_Descricao.Text;
-                    extra.Preco = Convert.ToInt32(TB_Preco.Text);
+                    extra.Preco = Convert.ToDouble(TB_Preco.Text);
                     extra.Ativo = ck_Ativo.Checked;
                     extra.Quantidade = Convert.ToInt32(tb_Quantidade.Text);
                     //Se o nome ou username ou nif estiver vazio, não atualiza

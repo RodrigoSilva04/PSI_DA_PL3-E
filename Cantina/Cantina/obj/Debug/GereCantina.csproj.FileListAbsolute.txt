@@ -46,3 +46,4 @@ D:\IPL\Projetos\ProjetoDA\ProjetoDA-main\Cantina\Cantina\obj\Debug\Cantina.Migra
 D:\IPL\Projetos\ProjetoDA\ProjetoDA-main\Cantina\Cantina\obj\Debug\Cantina.PratosForm.resources
 D:\IPL\Projetos\ProjetoDA\ProjetoDA-main\Cantina\Cantina\obj\Debug\Cantina.Migrations.Quantidade.resources
 D:\IPL\Projetos\ProjetoDA\ProjetoDA-main\Cantina\Cantina\obj\Debug\Cantina.Migrations.SaldoDouble.resources
+D:\IPL\Projetos\ProjetoDA\ProjetoDA-main\Cantina\Cantina\obj\Debug\Cantina.Migrations.saldoDoublePreco.resources

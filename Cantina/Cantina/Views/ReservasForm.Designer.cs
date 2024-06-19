@@ -39,6 +39,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.label5 = new System.Windows.Forms.Label();
+            this.tb_Total = new System.Windows.Forms.TextBox();
             this.bt_AdicionarExtraReserva = new System.Windows.Forms.Button();
             this.LBox_ExtrasReserva = new System.Windows.Forms.ListBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -56,8 +58,6 @@
             this.LBox_PratosReserva = new System.Windows.Forms.ListBox();
             this.DTData_Menu = new System.Windows.Forms.DateTimePicker();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.label5 = new System.Windows.Forms.Label();
-            this.tb_Total = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.SuspendLayout();
@@ -81,7 +81,7 @@
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(698, 662);
+            this.tabControl1.Size = new System.Drawing.Size(816, 662);
             this.tabControl1.TabIndex = 14;
             // 
             // tabPage1
@@ -109,9 +109,27 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(690, 636);
+            this.tabPage1.Size = new System.Drawing.Size(808, 636);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Efetuar Reserva";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(331, 362);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(45, 18);
+            this.label5.TabIndex = 65;
+            this.label5.Text = "Total:";
+            // 
+            // tb_Total
+            // 
+            this.tb_Total.Location = new System.Drawing.Point(306, 384);
+            this.tb_Total.Name = "tb_Total";
+            this.tb_Total.Size = new System.Drawing.Size(100, 20);
+            this.tb_Total.TabIndex = 64;
             // 
             // bt_AdicionarExtraReserva
             // 
@@ -132,6 +150,7 @@
             this.LBox_ExtrasReserva.Name = "LBox_ExtrasReserva";
             this.LBox_ExtrasReserva.Size = new System.Drawing.Size(101, 134);
             this.LBox_ExtrasReserva.TabIndex = 62;
+            this.LBox_ExtrasReserva.SelectedIndexChanged += new System.EventHandler(this.LBox_ExtrasReserva_SelectedIndexChanged);
             // 
             // label4
             // 
@@ -273,30 +292,12 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Marcar Reserva como Efetuada";
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(331, 362);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(45, 18);
-            this.label5.TabIndex = 65;
-            this.label5.Text = "Total:";
-            // 
-            // tb_Total
-            // 
-            this.tb_Total.Location = new System.Drawing.Point(306, 384);
-            this.tb_Total.Name = "tb_Total";
-            this.tb_Total.Size = new System.Drawing.Size(100, 20);
-            this.tb_Total.TabIndex = 64;
-            // 
             // ReservasForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(698, 662);
+            this.ClientSize = new System.Drawing.Size(816, 662);
             this.Controls.Add(this.tabControl1);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "ReservasForm";

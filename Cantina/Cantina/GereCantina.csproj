@@ -79,6 +79,10 @@
     <Compile Include="Migrations\202406182200338_SaldoDouble.Designer.cs">
       <DependentUpon>202406182200338_SaldoDouble.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202406191354339_saldoDoublePreco.cs" />
+    <Compile Include="Migrations\202406191354339_saldoDoublePreco.Designer.cs">
+      <DependentUpon>202406191354339_saldoDoublePreco.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\CantinaContext.cs" />
     <Compile Include="Controllers\EstudanteController.cs" />
@@ -156,6 +160,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202406182200338_SaldoDouble.resx">
       <DependentUpon>202406182200338_SaldoDouble.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202406191354339_saldoDoublePreco.resx">
+      <DependentUpon>202406191354339_saldoDoublePreco.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\ClientesForm.resx">
       <DependentUpon>ClientesForm.cs</DependentUpon>

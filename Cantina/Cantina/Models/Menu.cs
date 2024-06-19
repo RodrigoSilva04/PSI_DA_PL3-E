@@ -11,8 +11,8 @@ namespace GereCantina.Models
         public int Id { get; set; }
         public DateTime DataHora { get; set; }
         public int QtdDisponivel { get; set; }
-        public decimal PrecoEstudante { get; set; }
-        public decimal PrecoProfessor { get; set; }
+        public double PrecoEstudante { get; set; }
+        public double PrecoProfessor { get; set; }
         public ICollection<Prato> Pratos { get; set; }
         public ICollection<Extra> Extras { get; set; }
     }

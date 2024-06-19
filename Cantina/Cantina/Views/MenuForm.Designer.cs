@@ -42,6 +42,11 @@
             this.button2 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.bt_removerPrato = new System.Windows.Forms.Button();
+            this.bt_adicionarPrato = new System.Windows.Forms.Button();
+            this.bt_removerExtra = new System.Windows.Forms.Button();
+            this.bt_adicionarextra = new System.Windows.Forms.Button();
+            this.LBox_TodosMenus = new System.Windows.Forms.ListBox();
             this.label4 = new System.Windows.Forms.Label();
             this.tb_Quantidade = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -55,11 +60,6 @@
             this.DTHora_Menu = new System.Windows.Forms.DateTimePicker();
             this.LBox_ExtrasMenu = new System.Windows.Forms.ListBox();
             this.LBox_PratosMenu = new System.Windows.Forms.ListBox();
-            this.LBox_TodosMenus = new System.Windows.Forms.ListBox();
-            this.bt_adicionarextra = new System.Windows.Forms.Button();
-            this.bt_removerExtra = new System.Windows.Forms.Button();
-            this.bt_removerPrato = new System.Windows.Forms.Button();
-            this.bt_adicionarPrato = new System.Windows.Forms.Button();
             this.lb_Debug = new System.Windows.Forms.Label();
             this.lb_debug2 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
@@ -247,6 +247,60 @@
             this.groupBox1.Text = "groupBox1";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
+            // bt_removerPrato
+            // 
+            this.bt_removerPrato.Location = new System.Drawing.Point(546, 144);
+            this.bt_removerPrato.Margin = new System.Windows.Forms.Padding(2);
+            this.bt_removerPrato.Name = "bt_removerPrato";
+            this.bt_removerPrato.Size = new System.Drawing.Size(62, 34);
+            this.bt_removerPrato.TabIndex = 39;
+            this.bt_removerPrato.Text = "Remover Prato";
+            this.bt_removerPrato.UseVisualStyleBackColor = true;
+            this.bt_removerPrato.Click += new System.EventHandler(this.bt_removerPrato_Click);
+            // 
+            // bt_adicionarPrato
+            // 
+            this.bt_adicionarPrato.Location = new System.Drawing.Point(93, 171);
+            this.bt_adicionarPrato.Margin = new System.Windows.Forms.Padding(2);
+            this.bt_adicionarPrato.Name = "bt_adicionarPrato";
+            this.bt_adicionarPrato.Size = new System.Drawing.Size(62, 34);
+            this.bt_adicionarPrato.TabIndex = 38;
+            this.bt_adicionarPrato.Text = "Adicionar";
+            this.bt_adicionarPrato.UseVisualStyleBackColor = true;
+            this.bt_adicionarPrato.Click += new System.EventHandler(this.bt_adicionarPrato_Click);
+            // 
+            // bt_removerExtra
+            // 
+            this.bt_removerExtra.Location = new System.Drawing.Point(422, 144);
+            this.bt_removerExtra.Margin = new System.Windows.Forms.Padding(2);
+            this.bt_removerExtra.Name = "bt_removerExtra";
+            this.bt_removerExtra.Size = new System.Drawing.Size(62, 34);
+            this.bt_removerExtra.TabIndex = 37;
+            this.bt_removerExtra.Text = "Remover Extra";
+            this.bt_removerExtra.UseVisualStyleBackColor = true;
+            this.bt_removerExtra.Click += new System.EventHandler(this.bt_removerExtra_Click);
+            // 
+            // bt_adicionarextra
+            // 
+            this.bt_adicionarextra.Location = new System.Drawing.Point(93, 386);
+            this.bt_adicionarextra.Margin = new System.Windows.Forms.Padding(2);
+            this.bt_adicionarextra.Name = "bt_adicionarextra";
+            this.bt_adicionarextra.Size = new System.Drawing.Size(62, 34);
+            this.bt_adicionarextra.TabIndex = 36;
+            this.bt_adicionarextra.Text = "Adicionar";
+            this.bt_adicionarextra.UseVisualStyleBackColor = true;
+            this.bt_adicionarextra.Click += new System.EventHandler(this.bt_adicionarextra_Click);
+            // 
+            // LBox_TodosMenus
+            // 
+            this.LBox_TodosMenus.FormattingEnabled = true;
+            this.LBox_TodosMenus.Location = new System.Drawing.Point(422, 347);
+            this.LBox_TodosMenus.Margin = new System.Windows.Forms.Padding(2);
+            this.LBox_TodosMenus.Name = "LBox_TodosMenus";
+            this.LBox_TodosMenus.Size = new System.Drawing.Size(186, 134);
+            this.LBox_TodosMenus.TabIndex = 35;
+            this.LBox_TodosMenus.SelectedIndexChanged += new System.EventHandler(this.LBox_TodosMenus_SelectedIndexChanged);
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -344,6 +398,7 @@
             this.LBox_MenuAtual.Name = "LBox_MenuAtual";
             this.LBox_MenuAtual.Size = new System.Drawing.Size(186, 108);
             this.LBox_MenuAtual.TabIndex = 24;
+            this.LBox_MenuAtual.SelectedIndexChanged += new System.EventHandler(this.LBox_MenuAtual_SelectedIndexChanged);
             // 
             // DTHora_Menu
             // 
@@ -372,60 +427,6 @@
             this.LBox_PratosMenu.Size = new System.Drawing.Size(186, 134);
             this.LBox_PratosMenu.TabIndex = 21;
             this.LBox_PratosMenu.SelectedIndexChanged += new System.EventHandler(this.LBox_PratosMenu_SelectedIndexChanged);
-            // 
-            // LBox_TodosMenus
-            // 
-            this.LBox_TodosMenus.FormattingEnabled = true;
-            this.LBox_TodosMenus.Location = new System.Drawing.Point(422, 347);
-            this.LBox_TodosMenus.Margin = new System.Windows.Forms.Padding(2);
-            this.LBox_TodosMenus.Name = "LBox_TodosMenus";
-            this.LBox_TodosMenus.Size = new System.Drawing.Size(186, 134);
-            this.LBox_TodosMenus.TabIndex = 35;
-            this.LBox_TodosMenus.SelectedIndexChanged += new System.EventHandler(this.LBox_TodosMenus_SelectedIndexChanged);
-            // 
-            // bt_adicionarextra
-            // 
-            this.bt_adicionarextra.Location = new System.Drawing.Point(93, 386);
-            this.bt_adicionarextra.Margin = new System.Windows.Forms.Padding(2);
-            this.bt_adicionarextra.Name = "bt_adicionarextra";
-            this.bt_adicionarextra.Size = new System.Drawing.Size(62, 34);
-            this.bt_adicionarextra.TabIndex = 36;
-            this.bt_adicionarextra.Text = "Adicionar";
-            this.bt_adicionarextra.UseVisualStyleBackColor = true;
-            this.bt_adicionarextra.Click += new System.EventHandler(this.bt_adicionarextra_Click);
-            // 
-            // bt_removerExtra
-            // 
-            this.bt_removerExtra.Location = new System.Drawing.Point(422, 144);
-            this.bt_removerExtra.Margin = new System.Windows.Forms.Padding(2);
-            this.bt_removerExtra.Name = "bt_removerExtra";
-            this.bt_removerExtra.Size = new System.Drawing.Size(62, 34);
-            this.bt_removerExtra.TabIndex = 37;
-            this.bt_removerExtra.Text = "Remover Extra";
-            this.bt_removerExtra.UseVisualStyleBackColor = true;
-            this.bt_removerExtra.Click += new System.EventHandler(this.bt_removerExtra_Click);
-            // 
-            // bt_removerPrato
-            // 
-            this.bt_removerPrato.Location = new System.Drawing.Point(546, 144);
-            this.bt_removerPrato.Margin = new System.Windows.Forms.Padding(2);
-            this.bt_removerPrato.Name = "bt_removerPrato";
-            this.bt_removerPrato.Size = new System.Drawing.Size(62, 34);
-            this.bt_removerPrato.TabIndex = 39;
-            this.bt_removerPrato.Text = "Remover Prato";
-            this.bt_removerPrato.UseVisualStyleBackColor = true;
-            this.bt_removerPrato.Click += new System.EventHandler(this.bt_removerPrato_Click);
-            // 
-            // bt_adicionarPrato
-            // 
-            this.bt_adicionarPrato.Location = new System.Drawing.Point(93, 171);
-            this.bt_adicionarPrato.Margin = new System.Windows.Forms.Padding(2);
-            this.bt_adicionarPrato.Name = "bt_adicionarPrato";
-            this.bt_adicionarPrato.Size = new System.Drawing.Size(62, 34);
-            this.bt_adicionarPrato.TabIndex = 38;
-            this.bt_adicionarPrato.Text = "Adicionar";
-            this.bt_adicionarPrato.UseVisualStyleBackColor = true;
-            this.bt_adicionarPrato.Click += new System.EventHandler(this.bt_adicionarPrato_Click);
             // 
             // lb_Debug
             // 
