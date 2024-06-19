@@ -57,6 +57,14 @@ namespace Cantina.Controllers
                 return db.Extras.FirstOrDefault(e => e.Descricao == descricao);
             }
         }
+        public Extra BuscarExtraPorId(int id)
+        {
+            //Buscar Extra por id e retornar o extra
+            using (var db = new CantinaContext())
+            {
+                return db.Extras.Find(id);
+            }
+        }
 
     }
 }

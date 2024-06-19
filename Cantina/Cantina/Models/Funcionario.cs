@@ -9,5 +9,10 @@ namespace GereCantina.Models
     public class Funcionario : Utilizador
     {
         public string Username { get; set; }
+
+        public override string ToString()
+        {
+            return $"Nome: {Nome}, Username: {Username}";
+        }
     }
 }

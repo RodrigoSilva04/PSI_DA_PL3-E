@@ -11,5 +11,7 @@ namespace GereCantina.Models
     {
         //Criar a variavel saldo 
         public double Saldo { get; set; }
+
+
     }
 }

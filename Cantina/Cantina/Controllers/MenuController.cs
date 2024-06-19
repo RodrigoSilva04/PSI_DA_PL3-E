@@ -69,7 +69,7 @@ namespace Cantina.Controllers
                     db.Entry(menu).Collection(m => m.Extras).Load();
                 }
 
-                return menu;
+                return db.Menus.Include(m => m.Pratos).Include(m => m.Extras).FirstOrDefault(m => m.Id == id);
             }
         }
 

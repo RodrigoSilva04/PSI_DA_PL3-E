@@ -57,5 +57,12 @@ namespace Cantina.Controllers
                 return db.Clientes.FirstOrDefault(f => f.Nome == nome);
             }
         }
+        public Cliente BuscarClientePorId(int id)
+        {
+            using (var db = new CantinaContext())
+            {
+                return db.Clientes.Find(id);
+            }
+        }
     }
 }

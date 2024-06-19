@@ -1,0 +1,21 @@
+Informações do Cliente
+ID do Cliente: 1
+Nome do Cliente: Rodrigo Silva
+Saldo do Cliente: 39
+
+Informações da Reserva
+ID da Reserva: 16
+Data da Reserva: 19/06/2024 21:53:09
+
+Pratos
+Prato: Pao com planta
+Preço: 12
+Quantidade disponível: 19
+
+Extras
+Total da Reserva: 12
+
+Multas
+Valor da Multa: 3,00
+Número de Horas: 10
+

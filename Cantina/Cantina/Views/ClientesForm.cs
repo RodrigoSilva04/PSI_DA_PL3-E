@@ -1,4 +1,5 @@
 ﻿using Cantina.Controllers;
+using Cantina.Views;
 using GereCantina.Controllers;
 using GereCantina.Models;
 using System;
@@ -75,7 +76,7 @@ namespace Cantina
 
             foreach (Cliente cliente in clientes)
             {
-                LBox_Clientes.Items.Add(cliente.Nome);
+                LBox_Clientes.Items.Add(cliente);
             }
         }
 
@@ -97,10 +98,11 @@ namespace Cantina
             //Mostrar os dados do cliente selecionado se for estudante procurar o numero de estudante e se for professor procurar o email
             if (LBox_Clientes.SelectedItem != null)
             {
-                string nomeCliente = LBox_Clientes.SelectedItem.ToString();
+                int clienteid = ((Cliente)LBox_Clientes.SelectedItem).Id;
+                
 
                 ClienteController clienteController = new ClienteController();
-                Cliente cliente = clienteController.BuscarClientePorNome(nomeCliente);
+                Cliente cliente = clienteController.BuscarClientePorId(clienteid);
 
                 if (cliente != null)
                 {
@@ -216,12 +218,12 @@ namespace Cantina
                     MessageBox.Show("Selecione um cliente para remover.");
                     return;
                 }
+                int id = ((Cliente)LBox_Clientes.SelectedItem).Id;
 
-                string nomeCliente = LBox_Clientes.SelectedItem.ToString();
 
                 ClienteController clienteController = new ClienteController();
-                Cliente cliente = clienteController.BuscarClientePorNome(nomeCliente);
-
+                //Ir buscar o cliente por id
+                Cliente cliente = clienteController.BuscarClientePorId(id);
                 if (cliente != null)
                 {
                     clienteController.RemoverCliente(cliente);
@@ -237,6 +239,92 @@ namespace Cantina
             {
                 MessageBox.Show("Erro ao remover Cliente: " + ex.Message);
             }
+        }
+
+        private void bt_sair_Click_(object sender, EventArgs e)
+        {
+            //Sair do aplicativo
+            Application.Exit();
+        }
+        private void bt_Funcionários_Click(object sender, EventArgs e)
+        {
+            //Abrir a janela de funcionários
+            this.Hide();
+            FuncionarioForm funcionario = new FuncionarioForm();
+            funcionario.ShowDialog();
+            this.Close();
+        }
+
+        private void bt_Menu_Click(object sender, EventArgs e)
+        {
+            //Abrir a janela de menu
+            this.Hide();
+            MenuForm menu = new MenuForm();
+            menu.ShowDialog();
+            this.Close();
+        }
+
+        private void bt_Clientes_Click(object sender, EventArgs e)
+        {
+            //Abrir a janela de clientes
+            this.Hide();
+            ClientesForm clientes = new ClientesForm();
+            clientes.ShowDialog();
+            this.Close();
+        }
+
+        private void bt_Multas_Click(object sender, EventArgs e)
+        {
+            //Abrir a janela de multas
+            this.Hide();
+            MultasForm multas = new MultasForm();
+            multas.ShowDialog();
+            this.Close();
+        }
+
+        private void bt_Extras_Click(object sender, EventArgs e)
+        {
+            //Abrir a janela de extras
+            this.Hide();
+            ExtrasForm extras = new ExtrasForm();
+            extras.ShowDialog();
+            this.Close();
+        }
+
+        private void bt_reservas_Click(object sender, EventArgs e)
+        {
+            //Abrir a janela de reservas
+            this.Hide();
+            ReservasForm reservas = new ReservasForm();
+            reservas.ShowDialog();
+            this.Close();
+        }
+
+        private void bt_Pratos_Click(object sender, EventArgs e)
+        {
+            //Abrir a janela de pratos
+            this.Hide();
+            PratosForm pratos = new PratosForm();
+            pratos.ShowDialog();
+            this.Close();
+        }
+
+        private void bt_saldo_Click(object sender, EventArgs e)
+        {
+            //Abrir a janela de saldo
+            this.Hide();
+            SaldoForm saldo = new SaldoForm();
+            saldo.ShowDialog();
+            this.Close();
+
+        }
+
+        private void bt_voltar_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            PrincipalForm principal = new PrincipalForm();
+            principal.ShowDialog();
+            this.Close();
         }
     }
 }

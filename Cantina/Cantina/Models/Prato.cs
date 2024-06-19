@@ -15,5 +15,10 @@ namespace GereCantina.Models
 
         public bool ativo { get; set; }
         public ICollection<Menu> Menus { get; set; }
+
+        public override string ToString()
+        {
+            return $"{descricao}, Tipo: {tipo}, Quantidade: {quantidade}";
+        }
     }
 }

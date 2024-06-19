@@ -11,8 +11,11 @@ namespace GereCantina.Models
         public int Id { get; set; }
         public decimal Valor { get; set; }
         public int NumHoras { get; set; }
-        public int ReservaId { get; set; }
-        public Reserva Reserva { get; set; }
+
+        public override string ToString()
+        {
+            return $"Valor da multa: {Valor:C1}, Nº: {NumHoras}";
+        }
     }
 
 }

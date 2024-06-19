@@ -1,0 +1,24 @@
+Informações do Cliente
+ID do Cliente: 1
+Nome do Cliente: Rodrigo Silva
+Saldo do Cliente: 72
+
+Informações da Reserva
+ID da Reserva: 7
+Data da Reserva: 19/06/2024 18:55:00
+
+Pratos
+Prato: Lasanha
+Preço: 3
+Quantidade disponível: 13
+
+Extras
+Extra: Mousse de oreo
+Preço: 1
+
+Total da Reserva: 4
+
+Multas
+Valor da Multa: 1
+Número de Horas: -1
+

@@ -10,10 +10,16 @@ namespace GereCantina.Models
     {
         public int id { get; set; }
         public int clienteId { get; set; }
-        public Cliente Cliente { get; set; }
-        public ICollection<Multa> Multas { get; set; }
-        public ICollection<Prato> Pratos { get; set; }
-        public ICollection<Extra> Extras { get; set; }
-        public ICollection<Menu> Menus { get; set; }
+        public bool usada { get; set; }
+        public virtual Cliente Cliente { get; set; }
+        public virtual ICollection<Menu> Menus { get; set; }
+        public virtual ICollection<Prato> Pratos { get; set; }
+        public virtual ICollection<Extra> Extras { get; set; }
+        public virtual ICollection<Multa> Multas { get; set; }
+
+        public override string ToString()
+        {
+            return $"Cliente: {Cliente}, Multas: {Multas}, Pratos: {Pratos}, Extras: {Extras}, Menus: {Menus}";
+        }
      }
 }

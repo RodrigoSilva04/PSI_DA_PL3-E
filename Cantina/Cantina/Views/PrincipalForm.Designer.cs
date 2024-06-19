@@ -45,6 +45,7 @@
             this.bt_loginUt = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.tl_MenusSemana = new System.Windows.Forms.TableLayoutPanel();
+            this.bt_Saldo = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -139,7 +140,7 @@
             // 
             // bt_sair
             // 
-            this.bt_sair.Location = new System.Drawing.Point(212, 56);
+            this.bt_sair.Location = new System.Drawing.Point(317, 56);
             this.bt_sair.Margin = new System.Windows.Forms.Padding(2);
             this.bt_sair.Name = "bt_sair";
             this.bt_sair.Size = new System.Drawing.Size(101, 50);
@@ -169,6 +170,7 @@
             this.flowLayoutPanel1.Controls.Add(this.bt_Clientes);
             this.flowLayoutPanel1.Controls.Add(this.bt_Menu);
             this.flowLayoutPanel1.Controls.Add(this.bt_Funcionários);
+            this.flowLayoutPanel1.Controls.Add(this.bt_Saldo);
             this.flowLayoutPanel1.Controls.Add(this.bt_sair);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(21, 17);
             this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(2);
@@ -245,6 +247,17 @@
             this.tl_MenusSemana.Size = new System.Drawing.Size(400, 100);
             this.tl_MenusSemana.TabIndex = 15;
             // 
+            // bt_Saldo
+            // 
+            this.bt_Saldo.Location = new System.Drawing.Point(212, 56);
+            this.bt_Saldo.Margin = new System.Windows.Forms.Padding(2);
+            this.bt_Saldo.Name = "bt_Saldo";
+            this.bt_Saldo.Size = new System.Drawing.Size(101, 50);
+            this.bt_Saldo.TabIndex = 9;
+            this.bt_Saldo.Text = "Saldo";
+            this.bt_Saldo.UseVisualStyleBackColor = true;
+            this.bt_Saldo.Click += new System.EventHandler(this.bt_Saldo_Click);
+            // 
             // PrincipalForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -289,5 +302,6 @@
         private System.Windows.Forms.Button bt_loginUt;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TableLayoutPanel tl_MenusSemana;
+        private System.Windows.Forms.Button bt_Saldo;
     }
 }

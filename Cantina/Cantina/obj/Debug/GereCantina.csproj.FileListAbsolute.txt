@@ -47,3 +47,11 @@ D:\IPL\Projetos\ProjetoDA\ProjetoDA-main\Cantina\Cantina\obj\Debug\Cantina.Prato
 D:\IPL\Projetos\ProjetoDA\ProjetoDA-main\Cantina\Cantina\obj\Debug\Cantina.Migrations.Quantidade.resources
 D:\IPL\Projetos\ProjetoDA\ProjetoDA-main\Cantina\Cantina\obj\Debug\Cantina.Migrations.SaldoDouble.resources
 D:\IPL\Projetos\ProjetoDA\ProjetoDA-main\Cantina\Cantina\obj\Debug\Cantina.Migrations.saldoDoublePreco.resources
+D:\IPL\Projetos\ProjetoDA\ProjetoDA-main\Cantina\Cantina\obj\Debug\Cantina.Views.SaldoForm.resources
+D:\IPL\Projetos\ProjetoDA\ProjetoDA-main\Cantina\Cantina\obj\Debug\Cantina.MultasForm.resources
+D:\IPL\Projetos\ProjetoDA\ProjetoDA-main\Cantina\Cantina\obj\Debug\Cantina.Migrations.MultaFix.resources
+D:\IPL\Projetos\ProjetoDA\ProjetoDA-main\Cantina\Cantina\obj\Debug\Cantina.Migrations.ReservaUsada.resources
+D:\IPL\Projetos\ProjetoDA\ProjetoDA-main\Cantina\Cantina\bin\Debug\BouncyCastle.Cryptography.dll
+D:\IPL\Projetos\ProjetoDA\ProjetoDA-main\Cantina\Cantina\bin\Debug\itextsharp.dll
+D:\IPL\Projetos\ProjetoDA\ProjetoDA-main\Cantina\Cantina\bin\Debug\BouncyCastle.Cryptography.xml
+D:\IPL\Projetos\ProjetoDA\ProjetoDA-main\Cantina\Cantina\bin\Debug\itextsharp.xml

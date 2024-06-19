@@ -222,6 +222,14 @@ namespace Cantina
                 MessageBox.Show("Erro ao remover prato: " + ex.Message);
             }
         }
+
+        private void bt_voltar_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            PrincipalForm principal = new PrincipalForm();
+            principal.ShowDialog();
+            this.Close();
+        }
     }
     }
 

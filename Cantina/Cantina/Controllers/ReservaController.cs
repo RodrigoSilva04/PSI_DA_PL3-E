@@ -44,28 +44,15 @@ namespace Cantina.Controllers
                                   .ToList();
             }
         }
-
-        public void RemoverReserva(int id)
-        {
-            using (var db = new CantinaContext())
-            {
-                var reserva = db.Reservas.Find(id);
-                if (reserva != null)
-                {
-                    db.Reservas.Remove(reserva);
-                    db.SaveChanges();
-                }
-            }
-        }
-
         public void AtualizarReserva(Reserva reserva)
         {
             using (var db = new CantinaContext())
             {
-                db.Entry(reserva).State = System.Data.Entity.EntityState.Modified;
+                db.Entry(reserva).State = EntityState.Modified;
                 db.SaveChanges();
             }
         }
+
 
     }
 }

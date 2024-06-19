@@ -39,6 +39,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.LBox_Multas = new System.Windows.Forms.ListBox();
             this.label5 = new System.Windows.Forms.Label();
             this.tb_Total = new System.Windows.Forms.TextBox();
             this.bt_AdicionarExtraReserva = new System.Windows.Forms.Button();
@@ -58,8 +59,14 @@
             this.LBox_PratosReserva = new System.Windows.Forms.ListBox();
             this.DTData_Menu = new System.Windows.Forms.DateTimePicker();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.bt_Marcar = new System.Windows.Forms.Button();
+            this.LBox_ReservasUsadas = new System.Windows.Forms.ListBox();
+            this.LBox_Reservas = new System.Windows.Forms.ListBox();
+            this.bt_voltar = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            this.tabPage2.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -87,6 +94,8 @@
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.tabPage1.Controls.Add(this.bt_voltar);
+            this.tabPage1.Controls.Add(this.LBox_Multas);
             this.tabPage1.Controls.Add(this.label5);
             this.tabPage1.Controls.Add(this.tb_Total);
             this.tabPage1.Controls.Add(this.bt_AdicionarExtraReserva);
@@ -112,6 +121,15 @@
             this.tabPage1.Size = new System.Drawing.Size(808, 636);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Efetuar Reserva";
+            // 
+            // LBox_Multas
+            // 
+            this.LBox_Multas.FormattingEnabled = true;
+            this.LBox_Multas.Location = new System.Drawing.Point(68, 206);
+            this.LBox_Multas.Margin = new System.Windows.Forms.Padding(2);
+            this.LBox_Multas.Name = "LBox_Multas";
+            this.LBox_Multas.Size = new System.Drawing.Size(186, 82);
+            this.LBox_Multas.TabIndex = 66;
             // 
             // label5
             // 
@@ -208,6 +226,7 @@
             this.bt_ConfirmarReserva.TabIndex = 55;
             this.bt_ConfirmarReserva.Text = "Reservar";
             this.bt_ConfirmarReserva.UseVisualStyleBackColor = true;
+            this.bt_ConfirmarReserva.Click += new System.EventHandler(this.bt_ConfirmarReserva_Click);
             // 
             // LBox_Clientes
             // 
@@ -239,7 +258,7 @@
             // LBox_Menus
             // 
             this.LBox_Menus.FormattingEnabled = true;
-            this.LBox_Menus.Location = new System.Drawing.Point(68, 204);
+            this.LBox_Menus.Location = new System.Drawing.Point(68, 334);
             this.LBox_Menus.Margin = new System.Windows.Forms.Padding(2);
             this.LBox_Menus.Name = "LBox_Menus";
             this.LBox_Menus.Size = new System.Drawing.Size(186, 134);
@@ -285,12 +304,64 @@
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.tabPage2.Controls.Add(this.button1);
+            this.tabPage2.Controls.Add(this.bt_Marcar);
+            this.tabPage2.Controls.Add(this.LBox_ReservasUsadas);
+            this.tabPage2.Controls.Add(this.LBox_Reservas);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(690, 636);
+            this.tabPage2.Size = new System.Drawing.Size(808, 636);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Marcar Reserva como Efetuada";
+            // 
+            // bt_Marcar
+            // 
+            this.bt_Marcar.Location = new System.Drawing.Point(300, 366);
+            this.bt_Marcar.Name = "bt_Marcar";
+            this.bt_Marcar.Size = new System.Drawing.Size(180, 71);
+            this.bt_Marcar.TabIndex = 22;
+            this.bt_Marcar.Text = "Desmarcar";
+            this.bt_Marcar.UseVisualStyleBackColor = true;
+            this.bt_Marcar.Click += new System.EventHandler(this.bt_Marcar_Click);
+            // 
+            // LBox_ReservasUsadas
+            // 
+            this.LBox_ReservasUsadas.FormattingEnabled = true;
+            this.LBox_ReservasUsadas.Location = new System.Drawing.Point(511, 95);
+            this.LBox_ReservasUsadas.Margin = new System.Windows.Forms.Padding(2);
+            this.LBox_ReservasUsadas.Name = "LBox_ReservasUsadas";
+            this.LBox_ReservasUsadas.Size = new System.Drawing.Size(234, 199);
+            this.LBox_ReservasUsadas.TabIndex = 21;
+            // 
+            // LBox_Reservas
+            // 
+            this.LBox_Reservas.FormattingEnabled = true;
+            this.LBox_Reservas.Location = new System.Drawing.Point(65, 95);
+            this.LBox_Reservas.Margin = new System.Windows.Forms.Padding(2);
+            this.LBox_Reservas.Name = "LBox_Reservas";
+            this.LBox_Reservas.Size = new System.Drawing.Size(234, 199);
+            this.LBox_Reservas.TabIndex = 20;
+            // 
+            // bt_voltar
+            // 
+            this.bt_voltar.Location = new System.Drawing.Point(24, 558);
+            this.bt_voltar.Name = "bt_voltar";
+            this.bt_voltar.Size = new System.Drawing.Size(131, 61);
+            this.bt_voltar.TabIndex = 67;
+            this.bt_voltar.Text = "Voltar";
+            this.bt_voltar.UseVisualStyleBackColor = true;
+            this.bt_voltar.Click += new System.EventHandler(this.bt_voltar_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(24, 558);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(131, 61);
+            this.button1.TabIndex = 24;
+            this.button1.Text = "Voltar";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // ReservasForm
             // 
@@ -305,6 +376,7 @@
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
+            this.tabPage2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -332,5 +404,11 @@
         private System.Windows.Forms.ListBox LBox_ExtrasReserva;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox tb_Total;
+        private System.Windows.Forms.ListBox LBox_Reservas;
+        private System.Windows.Forms.Button bt_Marcar;
+        private System.Windows.Forms.ListBox LBox_ReservasUsadas;
+        private System.Windows.Forms.ListBox LBox_Multas;
+        private System.Windows.Forms.Button bt_voltar;
+        private System.Windows.Forms.Button button1;
     }
 }

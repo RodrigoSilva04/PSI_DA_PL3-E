@@ -195,5 +195,13 @@ namespace Cantina.Views
                 MessageBox.Show("Erro ao Editar Extra: " + ex.Message);
             }
         }
+
+        private void bt_voltar_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            PrincipalForm principal = new PrincipalForm();
+            principal.ShowDialog();
+            this.Close();
+        }
     }
 }

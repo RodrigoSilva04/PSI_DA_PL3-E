@@ -41,7 +41,7 @@ namespace Cantina.Controllers
           //Atualizar todos os valores do prato
             using (var db = new CantinaContext())
             {
-                db.Entry(prato).State = System.Data.Entity.EntityState.Modified;
+                db.Entry(prato).State = EntityState.Modified;
                 db.SaveChanges();
             }
         }
@@ -62,6 +62,14 @@ namespace Cantina.Controllers
             {
                 return db.Pratos.FirstOrDefault(p => p.descricao == descricao);
                 
+            }
+        }
+        public Prato BuscarPratoPorId(int id)
+        {
+            //Buscar Prato por ID e retornar o prato
+            using (var db = new CantinaContext())
+            {
+                return db.Pratos.Find(id);
             }
         }
     }

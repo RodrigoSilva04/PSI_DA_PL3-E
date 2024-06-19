@@ -168,6 +168,7 @@ namespace Cantina
             this.Hide();
             FuncionarioForm funcionario = new FuncionarioForm();
             funcionario.ShowDialog();
+            this.Close();
         }
 
         private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
@@ -203,7 +204,14 @@ namespace Cantina
         {
             
         }
-       
 
+        private void bt_Saldo_Click(object sender, EventArgs e)
+        {
+            //Abrir a janela de saldo
+            this.Hide();
+            SaldoForm saldo = new SaldoForm();
+            saldo.ShowDialog();
+            this.Close();
+        }
     }
 }

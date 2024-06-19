@@ -36,11 +36,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="BouncyCastle.Cryptography, Version=2.0.0.0, Culture=neutral, PublicKeyToken=072edcf4a5328938, processorArchitecture=MSIL">
+      <HintPath>..\packages\BouncyCastle.Cryptography.2.4.0\lib\net461\BouncyCastle.Cryptography.dll</HintPath>
+    </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.4, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13.4\lib\net461\itextsharp.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -58,6 +64,8 @@
   <ItemGroup>
     <Compile Include="Controllers\ClienteController.cs" />
     <Compile Include="Controllers\ExtraController.cs" />
+    <Compile Include="Controllers\FaturaController.cs" />
+    <Compile Include="Controllers\ItemFaturaController.cs" />
     <Compile Include="Controllers\MenuController.cs" />
     <Compile Include="Controllers\MultaController.cs" />
     <Compile Include="Controllers\PratoController.cs" />
@@ -82,6 +90,14 @@
     <Compile Include="Migrations\202406191354339_saldoDoublePreco.cs" />
     <Compile Include="Migrations\202406191354339_saldoDoublePreco.Designer.cs">
       <DependentUpon>202406191354339_saldoDoublePreco.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202406191845294_MultaFix.cs" />
+    <Compile Include="Migrations\202406191845294_MultaFix.Designer.cs">
+      <DependentUpon>202406191845294_MultaFix.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202406191943441_ReservaUsada.cs" />
+    <Compile Include="Migrations\202406191943441_ReservaUsada.Designer.cs">
+      <DependentUpon>202406191943441_ReservaUsada.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\CantinaContext.cs" />
@@ -149,6 +165,12 @@
     <Compile Include="Views\ReservasForm.Designer.cs">
       <DependentUpon>ReservasForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\SaldoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\SaldoForm.Designer.cs">
+      <DependentUpon>SaldoForm.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Migrations\202406161439030_Teste.resx">
       <DependentUpon>202406161439030_Teste.cs</DependentUpon>
     </EmbeddedResource>
@@ -164,6 +186,12 @@
     <EmbeddedResource Include="Migrations\202406191354339_saldoDoublePreco.resx">
       <DependentUpon>202406191354339_saldoDoublePreco.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202406191845294_MultaFix.resx">
+      <DependentUpon>202406191845294_MultaFix.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202406191943441_ReservaUsada.resx">
+      <DependentUpon>202406191943441_ReservaUsada.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\ClientesForm.resx">
       <DependentUpon>ClientesForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -175,6 +203,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\MenuForm.resx">
       <DependentUpon>MenuForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\MultasForm.resx">
+      <DependentUpon>MultasForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\PratosForm.resx">
       <DependentUpon>PratosForm.cs</DependentUpon>
@@ -193,6 +224,9 @@
     </Compile>
     <EmbeddedResource Include="Views\ReservasForm.resx">
       <DependentUpon>ReservasForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\SaldoForm.resx">
+      <DependentUpon>SaldoForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="content\net40\App.config" />
     <None Include="packages.config" />

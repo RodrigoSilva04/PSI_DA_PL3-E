@@ -20,6 +20,7 @@ namespace Cantina.Controllers
             }
         }
 
+
         //Adicionar
         public void AdicionarMulta(Multa multa)
         {

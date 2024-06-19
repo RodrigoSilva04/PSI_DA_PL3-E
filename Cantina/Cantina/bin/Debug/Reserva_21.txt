@@ -1,0 +1,24 @@
+Informações do Cliente
+ID do Cliente: 6
+Nome do Cliente: Fausto
+Saldo do Cliente: 48
+
+Informações da Reserva
+ID da Reserva: 21
+Data da Reserva: 19/06/2024 22:22:59
+
+Pratos
+Prato: Lasanha
+Preço: 12
+Quantidade disponível: 4
+
+Extras
+Extra: Mousse de oreo
+Preço: 1
+
+Total da Reserva: 13
+
+Multas
+Valor da Multa: 3,00
+Número de Horas: 10
+

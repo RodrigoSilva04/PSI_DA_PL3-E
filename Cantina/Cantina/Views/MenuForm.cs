@@ -50,8 +50,6 @@ namespace Cantina
                     LBox_ExtrasMenu.Items.Add(extra);
                 }
             }
-            LBox_PratosMenu.DisplayMember = "descricao";
-            LBox_ExtrasMenu.DisplayMember = "Descricao";
         }
 
         private void LBox_PratosMenu_SelectedIndexChanged(object sender, EventArgs e)
@@ -71,10 +69,16 @@ namespace Cantina
                 // Verifica se todos os campos obrigatórios estão preenchidos e se há pelo menos um prato ou extra no menu
                 if (string.IsNullOrEmpty(tb_Quantidade.Text) ||
                     string.IsNullOrEmpty(TB_precoEstudante.Text) ||
-                    string.IsNullOrEmpty(TB_precoProfessor.Text) ||
-                    LBox_MenuAtual.Items.Count == 0)
+                    string.IsNullOrEmpty(TB_precoProfessor.Text))
                 {
                     MessageBox.Show("Por favor, preencha todos os campos obrigatórios e adicione pelo menos um prato ou extra ao menu.", "Campos Obrigatórios", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                //Se nao estiver no menu pelo menos um prato do tipo vegetariano carne e peixe tem de ter um de cada da erro
+                if (!LBox_MenuAtual.Items.OfType<Prato>().Any(prato => prato.tipo == "Vegetariano") ||!LBox_MenuAtual.Items.OfType<Prato>().Any(prato => prato.tipo == "Carne") ||!LBox_MenuAtual.Items.OfType<Prato>().Any(prato => prato.tipo == "Peixe"))
+                {
+                    MessageBox.Show("O menu deve conter pelo menos um prato de cada tipo: Vegetariano, Carne e Peixe.", "Erro de Prato", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
 
@@ -101,9 +105,6 @@ namespace Cantina
                     }
                 }
 
-                // Debug output para o número de pratos e extras detectados
-                lb_Debug.Text = $"Pratos count: {pratos.Count}, Extras count: {extras.Count}";
-
                 // Define a data e hora para o menu
                 DateTime dataHora = DTData_Menu.Value.Date + DTHora_Menu.Value.TimeOfDay;
 
@@ -122,10 +123,6 @@ namespace Cantina
                 // Adiciona o novo menu ao banco de dados
                 MenuController menuController = new MenuController();
                 menuController.AdicionarMenu(novoMenu, pratos, extras);
-                //Debug se o menu foi criado corretamente
-                lb_debug2.Text = $"Menu criado: {novoMenu.DataHora}, {novoMenu.QtdDisponivel}, {novoMenu.PrecoEstudante}, {novoMenu.PrecoProfessor}";
-                lb_debug2.Text = $"Menu criado: {novoMenu.DataHora}, {novoMenu.QtdDisponivel}, {novoMenu.PrecoEstudante}, {novoMenu.PrecoProfessor}";
-
                 // Recarrega as listas e limpa as seleções atuais do menu
                 CarregarListBoxs();
                 LBox_MenuAtual.Items.Clear();
@@ -161,22 +158,23 @@ namespace Cantina
 
         private void bt_adicionarPrato_Click(object sender, EventArgs e)
         {
-            if (!LBox_MenuAtual.Items.OfType<Prato>().Any())
+            //Verifica se o prato ja esta adicionado ao menu se tiver da erro se nao estiver adiciona ao menu
+            if (LBox_PratosMenu.SelectedItem != null)
             {
-                if (LBox_PratosMenu.SelectedItem != null)
+                if (LBox_MenuAtual.Items.OfType<Prato>().Any(prato => prato.id == ((Prato)LBox_PratosMenu.SelectedItem).id))
                 {
-                    LBox_MenuAtual.Items.Add(LBox_PratosMenu.SelectedItem);
+                    MessageBox.Show("O prato selecionado já foi adicionado ao menu.", "Erro de Prato", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 else
                 {
-                    MessageBox.Show("Selecione um prato para adicionar");
+                    LBox_MenuAtual.Items.Add(LBox_PratosMenu.SelectedItem);
                 }
             }
             else
             {
-                MessageBox.Show("Já tem um prato adicionado ao menu atual");
+                MessageBox.Show("Selecione um prato para adicionar");
             }
-            LBox_MenuAtual.DisplayMember = "descricao";
+            
         }
 
         private void bt_removerExtra_Click(object sender, EventArgs e)
@@ -221,7 +219,6 @@ namespace Cantina
             {
                 MessageBox.Show("Já tem 3 extras adicionados ao menu atual");
             }
-            LBox_MenuAtual.DisplayMember = "Descricao";
         }
 
         private void LBox_TodosMenus_SelectedIndexChanged(object sender, EventArgs e)
@@ -244,18 +241,18 @@ namespace Cantina
                     foreach (Prato prato in menu.Pratos)
                     {
                         LBox_MenuAtual.Items.Add(prato);
-                        LBox_MenuAtual.DisplayMember = "descricao";
+
                     }
                     foreach (Extra extra in menu.Extras)
                     {
                         LBox_MenuAtual.Items.Add(extra);
-                        LBox_MenuAtual.DisplayMember = "Descricao";
+
                     }
 
                 }
                 catch (InvalidCastException ex)
                 {
-                    MessageBox.Show("Ocorreu um erro ao carregar o menu selecionado. Tente novamente.", "Erro de Tipo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show($"Ocorreu um erro ao carregar o menu selecionado :{ex.Message}. Tente novamente.", "Erro de Tipo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 catch (Exception ex)
                 {
@@ -309,6 +306,7 @@ namespace Cantina
                     menu.PrecoProfessor = double.Parse(TB_precoProfessor.Text);
                     menu.Pratos = LBox_MenuAtual.Items.OfType<Prato>().ToList();
                     menu.Extras = LBox_MenuAtual.Items.OfType<Extra>().ToList();
+                    menu.DataHora = DTData_Menu.Value.Date + DTHora_Menu.Value.TimeOfDay;
 
                     // Atualizar o menu no contexto do Entity Framework
                     menuController.AtualizarMenu(menu);
@@ -341,6 +339,28 @@ namespace Cantina
         private void LBox_MenuAtual_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void LBox_ExtrasMenu_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bt_Menu_Click(object sender, EventArgs e)
+        {
+            //Abrir a janela de menu
+            this.Hide();
+            PrincipalForm menu = new PrincipalForm();
+            menu.ShowDialog();
+            this.Close();
+        }
+
+        private void bt_voltar_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            PrincipalForm principal = new PrincipalForm();
+            principal.ShowDialog();
+            this.Close();
         }
     }
     
