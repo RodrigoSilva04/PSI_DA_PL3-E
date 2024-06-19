@@ -1,18 +1,70 @@
-﻿using System;
+﻿using GereCantina.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data.Entity;
 
 namespace Cantina.Controllers
 {
     public class ReservaController
     {
         //Efetuar CRUD de Reservas
-        private void AdicionarReserva()
+        public void AdicionarReserva(Reserva reserva)
         {
-            //Adicionar Reserva
+            using (var db = new CantinaContext())
+            {
+                db.Reservas.Add(reserva);
+                db.SaveChanges();
+            }
+        }
+        public Reserva BuscarReservaPorId(int id)
+        {
+            using (var db = new CantinaContext())
+            {
+                return db.Reservas.Include(r => r.Multas)
+                                  .Include(r => r.Pratos)
+                                  .Include(r => r.Extras)
+                                  .Include(r => r.Menus)
+                                  .Include(r => r.Cliente)
+                                  .FirstOrDefault(r => r.id == id);
+            }
+        }
 
+        public List<Reserva> ListarReservas()
+        {
+            using (var db = new CantinaContext())
+            {
+                return db.Reservas.Include(r => r.Multas)
+                                  .Include(r => r.Pratos)
+                                  .Include(r => r.Extras)
+                                  .Include(r => r.Menus)
+                                  .Include(r => r.Cliente)
+                                  .ToList();
+            }
+        }
+
+        public void RemoverReserva(int id)
+        {
+            using (var db = new CantinaContext())
+            {
+                var reserva = db.Reservas.Find(id);
+                if (reserva != null)
+                {
+                    db.Reservas.Remove(reserva);
+                    db.SaveChanges();
+                }
+            }
+        }
+
+        public void AtualizarReserva(Reserva reserva)
+        {
+            using (var db = new CantinaContext())
+            {
+                db.Entry(reserva).State = System.Data.Entity.EntityState.Modified;
+                db.SaveChanges();
+            }
         }
 
     }
