@@ -1,6 +1,6 @@
 # Projeto de Desenvolvimento de Aplicações (DA)
 
-![IPL](https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/IPL_Logo.png/200px-IPL_Logo.png)
+![IPL](logoipl.png)
 
 ## Equipa e Instituição
 
