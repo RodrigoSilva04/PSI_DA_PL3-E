@@ -10,7 +10,7 @@
 **Ano Letivo**: 2023/2024, 1º Ano, 2º Semestre  
 
 **Equipa**:  
-- Rodrigo Silva ([GitHub](https://github.com/RodrigoSilva04)
+- Rodrigo Silva ([GitHub](https://github.com/RodrigoSilva04))
 - Henrique Salgado ([GitHub](https://github.com/joaosousa))
 - Fábio Almeida ([GitHub](https://github.com/luciomachado))
 
