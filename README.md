@@ -11,8 +11,8 @@
 
 **Equipa**:  
 - Rodrigo Silva ([GitHub](https://github.com/RodrigoSilva04))
-- Henrique Salgado ([GitHub](https://github.com/joaosousa))
-- Fábio Almeida ([GitHub](https://github.com/luciomachado))
+- Henrique Salgado ([GitHub](https://github.com/2231644))
+- Fábio Almeida ([GitHub](https://github.com/igreja19))
 
 ## Descrição do Projeto
 
