@@ -10,7 +10,7 @@
 **Ano Letivo**: 2023/2024, 1º Ano, 2º Semestre  
 
 **Equipa**:  
-- Rodrigo Silva ([GitHub]((https://github.com/RodrigoSilva04))
+- Rodrigo Silva ([GitHub](https://github.com/RodrigoSilva04)
 - Henrique Salgado ([GitHub](https://github.com/joaosousa))
 - Fábio Almeida ([GitHub](https://github.com/luciomachado))
 
@@ -51,4 +51,4 @@ Avaliação final do projeto com a equipa Scrum, destacando pontos positivos, ne
 
 ## Repositório do Projeto
 
-O repositório GitHub do projeto pode ser acessado através do seguinte link: [PSI_DA_PL3-E](https://github.com/username/PSI_DA_PL3-E)
+O repositório GitHub do projeto pode ser acessado através do seguinte link: [PSI_DA_PL3-E](https://github.com/RodrigoSilva04/PSI_DA_PL3-E)
